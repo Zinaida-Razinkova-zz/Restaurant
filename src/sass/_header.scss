@@ -1,0 +1,176 @@
+.header-overlay {
+  height: 800px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+  padding: 0px;
+}
+.header-list-right {
+  margin: 45px 0px 0px 70px;
+
+  font-family: $font_accent;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: $color_white;
+}
+.header-list-left {
+  margin: 45px 70px 0px 0px;
+
+  font-family: $font_accent;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  color: $color_white;
+}
+.logo {
+  margin-top: 25px;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.header-institution {
+  margin: 150px 0px 0px 0px;
+
+  font-family: $font_accent;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.16;
+  letter-spacing: 0.5em;
+  color: $color_white;
+  text-align: center;
+}
+
+.header-name {
+  margin: 40px 70px 0px 0px;
+
+  font-family: $font_details;
+  font-size: 96px;
+  color: $color_white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header-button-book {
+  margin-right: 20px;
+  border-radius: 5px;
+  min-width: 200px;
+  height: 60px;
+
+  text-align: center;
+  border: none;
+
+  color: $color_white;
+  background-color: $color_accent;
+  font-family: $font_accent;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.67;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.header-button-explore {
+  margin-left: 20px;
+  border-radius: 5px;
+  min-width: 200px;
+  height: 60px;
+
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  color: $color_white;
+  font-family: $font_accent;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.67;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.header-button-block {
+  text-align: center;
+}
+
+.header-inscription {
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  position: relative;
+  top: -25px;
+  left: -50px;
+  font-family: $font_accent;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: $color_white;
+
+  transform: rotate(-90deg);
+}
+
+.header-social-networks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  position: relative;
+  top: -350px;
+  left: 1050px;
+}
+
+.header-link-fb,
+.header-link-twit,
+.header-link-insta {
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $color_accent;
+  }
+}
+
+.header-icons-fb {
+  margin: 10px 0px 0px 19px;
+}
+
+.header-icons-twit,
+.header-icons-insta {
+  margin: 20px 0px 0px 19px;
+}
+
+.header-arrow-to-down {
+  margin-top: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
