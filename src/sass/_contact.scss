@@ -1,0 +1,98 @@
+.contact-title {
+  margin: 0px;
+  font-family: $font_details;
+  font-size: 36px;
+  line-height: 1.33;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color_black;
+}
+
+.contact-block {
+  padding: 100px 0px 100px 0px;
+}
+
+.contact-paragraf {
+  display: block;
+  width: 600px;
+  text-align: center;
+  margin: 30px auto 0px auto;
+  font-family: $font_accent;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.56;
+  color: $color_black;
+}
+.contact-input-name,
+.contact-input-email,
+.contact-input-phone {
+  margin: 40px 0px 0px 0px;
+  width: 420px;
+  height: 60px;
+  background: #e5e5e5;
+  border-radius: 5px;
+  border: none;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.contact-input-message {
+  margin: 10px 0px 0px 0px;
+  width: 1190px;
+  height: 120px;
+  background: #e5e5e5;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form-block {
+  display: flex;
+  justify-content: center;
+}
+
+.book-button {
+  padding: 0px;
+  margin: 5px 0px 0px 0px;
+  border-radius: 5px;
+  min-width: 564px;
+  height: 60px;
+
+  text-align: center;
+  border: none;
+
+  color: $color_white;
+  background-color: $color_accent;
+  font-family: $font_accent;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.67;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.contact-data-block {
+  display: flex;
+  justify-content: left;
+  margin-right: 25px;
+}
+
+.contact-data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.contact-data-title {
+  margin: 25px 30px 0px 0px;
+
+  font-family: $font_accent;
+  //   font-weight: bold;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: $color_black;
+}

@@ -1,0 +1,21 @@
+.footer-map {
+  display: block;
+  width: 100%;
+}
+
+.footer-block {
+  background-color: $color_black;
+  height: 100px;
+  padding: 45px 0px 45px 0px;
+}
+
+.footer-copyright {
+  font-family: $color_white;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1;
+
+  text-align: center;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.5);
+}

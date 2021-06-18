@@ -1,0 +1,38 @@
+.events-overlay {
+  height: 675x;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/specialtys-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.events-block {
+  padding: 40px 0px 40px 0px;
+}
+
+.events-title {
+  margin: 0px;
+  text-align: center;
+  font-family: $font_accent;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: $color_white;
+}
+
+.events-block-img {
+  display: flex;
+  justify-content: center;
+}
+.events-inscription {
+  margin: 10px 0px 0px 0px;
+
+  font-family: $font_accent;
+  //   font-weight: bold;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: $color_white;
+}
