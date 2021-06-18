@@ -27,6 +27,9 @@
   line-height: 18px;
   letter-spacing: 0em;
   color: $color_white;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 .header-list-left {
   margin: 45px 70px 0px 0px;
@@ -37,6 +40,10 @@
   line-height: 1.5;
   letter-spacing: 0em;
   color: $color_white;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 .logo {
   margin-top: 25px;

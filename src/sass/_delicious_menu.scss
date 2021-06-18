@@ -56,7 +56,8 @@
   font-family: $font_details;
   font-size: 18px;
   line-height: 1;
-  color: #333333;
+  font-weight: bold;
+  color: $color_grey_accent;
   margin: 40px 0 0 0;
 }
 .delicious-ul {
