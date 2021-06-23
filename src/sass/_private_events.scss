@@ -24,15 +24,35 @@
 
 .events-block-img {
   display: flex;
-  justify-content: center;
+  position: relative;
+  top: 0px;
+  left: 110px;
 }
 .events-inscription {
   margin: 10px 0px 0px 0px;
 
   font-family: $font_accent;
-  //   font-weight: bold;
   font-size: 12px;
   line-height: 1;
   text-align: center;
   color: $color_white;
+}
+
+.events-vertical-line-left {
+  position: absolute;
+  top: 4020px;
+  left: 200px;
+  height: 700px;
+}
+.events-vertical-line-center {
+  position: absolute;
+  top: 4020px;
+  left: 665px;
+  height: 700px;
+}
+.events-vertical-line-right {
+  position: absolute;
+  top: 4020px;
+  left: 1080px;
+  height: 700px;
 }

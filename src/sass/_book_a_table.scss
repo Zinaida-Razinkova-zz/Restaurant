@@ -32,6 +32,7 @@
 .book-input-date,
 .book-input-time {
   margin: 5px 0px 0px 0px;
+  padding-left: 10px;
   width: 277px;
   height: 60px;
   background: #e5e5e5;
@@ -70,4 +71,15 @@
   line-height: 1;
   text-align: center;
   color: #333333;
+}
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+  position: fixed;
+  bottom: 50px;
+  right: 35px;
+  // display: none;
+  // text-indent: -9999px;
+  background: url(../images/icon-top.png) no-repeat;
 }

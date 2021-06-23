@@ -51,6 +51,45 @@
     transform: scale(1.05);
   }
 }
+
+.header-orange-line {
+  margin-top: 50px;
+  position: relative;
+  top: -25px;
+  left: 556px;
+}
+.header-horizontal-line-left {
+  position: absolute;
+  top: 99px;
+  left: 80px;
+}
+.header-horizontal-line-right {
+  position: absolute;
+  top: 99px;
+  left: 775px;
+}
+
+.header-vertical-line-left {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  height: 700px;
+}
+.header-vertical-line-center {
+  position: absolute;
+  top: 220px;
+  left: 665px;
+  z-index: 10;
+  height: 580px;
+}
+.header-vertical-line-right {
+  position: absolute;
+  top: 100px;
+  left: 1080px;
+  z-index: 10;
+  height: 700px;
+}
+
 .header-institution {
   margin: 150px 0px 0px 0px;
 
@@ -74,12 +113,14 @@
 }
 
 .header-button-book {
-  margin-right: 20px;
+  position: absolute;
+  top: 550px;
+  left: 455px;
+
+  padding: 0px;
   border-radius: 5px;
   min-width: 200px;
   height: 60px;
-
-  text-align: center;
   border: none;
 
   color: $color_white;
@@ -95,14 +136,17 @@
 }
 
 .header-button-explore {
-  margin-left: 20px;
+  position: absolute;
+  top: 550px;
+  left: 676px;
+
+  padding: 0px;
   border-radius: 5px;
   min-width: 200px;
   height: 60px;
 
   background-color: Transparent;
   background-repeat: no-repeat;
-  text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
 
   color: $color_white;
@@ -121,10 +165,12 @@
 
 .header-inscription {
   display: inline-block;
-  margin: 0px 0px 0px 0px;
-  position: relative;
-  top: -25px;
-  left: -50px;
+  margin: 0px;
+
+  position: absolute;
+  top: 520px;
+  left: -5px;
+
   font-family: $font_accent;
   font-weight: bold;
   font-size: 12px;
@@ -136,13 +182,13 @@
 }
 
 .header-social-networks {
+  position: absolute;
+  top: 395px;
+  left: 1165px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  position: relative;
-  top: -350px;
-  left: 1050px;
 }
 
 .header-link-fb,
@@ -172,6 +218,11 @@
 }
 
 .header-arrow-to-down {
+  position: absolute;
+  top: 600px;
+  left: 635px;
+  z-index: 10;
+
   margin-top: 80px;
   display: block;
   margin-left: auto;
