@@ -56,7 +56,7 @@
   margin-top: 50px;
   position: relative;
   top: -25px;
-  left: 556px;
+  left: 563px;
 }
 .header-horizontal-line-left {
   position: absolute;
@@ -67,27 +67,6 @@
   position: absolute;
   top: 99px;
   left: 775px;
-}
-
-.header-vertical-line-left {
-  position: absolute;
-  top: 100px;
-  left: 200px;
-  height: 700px;
-}
-.header-vertical-line-center {
-  position: absolute;
-  top: 220px;
-  left: 665px;
-  z-index: 10;
-  height: 580px;
-}
-.header-vertical-line-right {
-  position: absolute;
-  top: 100px;
-  left: 1080px;
-  z-index: 10;
-  height: 700px;
 }
 
 .header-institution {
@@ -113,11 +92,8 @@
 }
 
 .header-button-book {
-  position: absolute;
-  top: 550px;
-  left: 455px;
-
   padding: 0px;
+  margin-right: 20px;
   border-radius: 5px;
   min-width: 200px;
   height: 60px;
@@ -136,11 +112,8 @@
 }
 
 .header-button-explore {
-  position: absolute;
-  top: 550px;
-  left: 676px;
-
   padding: 0px;
+  margin-left: 20px;
   border-radius: 5px;
   min-width: 200px;
   height: 60px;
@@ -218,11 +191,6 @@
 }
 
 .header-arrow-to-down {
-  position: absolute;
-  top: 600px;
-  left: 635px;
-  z-index: 10;
-
   margin-top: 80px;
   display: block;
   margin-left: auto;

@@ -7,6 +7,10 @@
   background-position: center;
 }
 
+.specialties-section {
+  padding: 100px 0px 100px 0px;
+}
+
 .specialties-img {
   margin-right: 80px;
 }
@@ -50,30 +54,11 @@
 .specialties-block {
   display: flex;
   justify-content: center;
-  padding: 100px 0px 100px 0px;
 }
 
-.our-team-block {
-  display: flex;
-  justify-content: center;
-  padding: 100px 0px 100px 0px;
-}
-
-.specialties-vertical-line-left {
-  position: absolute;
-  top: 2470px;
-  left: 200px;
-  height: 700px;
-}
-.specialties-vertical-line-center {
-  position: absolute;
-  top: 2470px;
-  left: 665px;
-  height: 700px;
-}
-.specialties-vertical-line-right {
-  position: absolute;
-  top: 2470px;
-  left: 1080px;
-  height: 700px;
+.specialties-orange-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }

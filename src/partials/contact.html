@@ -1,6 +1,8 @@
 <section id="CONTACT" class="container">
   <div class="contact-block">
     <h2 class="contact-title">CONTACT</h2>
+    <img class="contact-orange-line" src="./images/orange-line.png" alt="" width="60" />
+
     <p class="contact-paragraf">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
       a, tempor magna.
@@ -38,9 +40,24 @@
       />
       <div class="contact-data">
         <div class="contact-data-block">
-          <p class="contact-data-title">5th London Boulevard, U.K.</p>
-          <p class="contact-data-title">+40 729 131 637/+40 726 458 782</p>
-          <p class="contact-data-title">office@mindblister.com</p>
+          <div class="contact-icon-block">
+            <svg class="icon-location" width="16px" height="12px">
+              <use href="./images/sprite.svg#icon-location"></use>
+            </svg>
+            <p class="contact-data-title">London SW1A 0AA</p>
+          </div>
+          <div class="contact-icon-block">
+            <svg class="icon-phone" width="16px" height="12px">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+            <a href="tel:+40 729 131 637" class="contact-data-title">+40 729 131 637</a>
+          </div>
+          <div class="contact-icon-block">
+            <svg class="icon-envelop" width="16px" height="12px">
+              <use href="./images/sprite.svg#icon-envelop"></use>
+            </svg>
+            <a href="" class="contact-data-title">office@mindblister.com </a>
+          </div>
         </div>
         <button data-modal-open class="book-button">SEND MESSAGE</button>
       </div>

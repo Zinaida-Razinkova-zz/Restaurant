@@ -11,6 +11,10 @@
   margin-right: 80px;
 }
 
+.our-team-container {
+  padding: 100px 0px 100px 0px;
+}
+
 .our-team-title {
   margin: 0px;
   text-align: center;
@@ -32,6 +36,13 @@
   color: $color_white;
 }
 
+.our-team-orange-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
 .our-team-subtitle,
 .our-team-paragraf {
   margin: 30px 0px 0px 0px;
@@ -49,24 +60,5 @@
 .our-team-block {
   display: flex;
   justify-content: center;
-  padding: 100px 0px 100px 0px;
-}
-
-.our-team-vertical-line-left {
-  position: absolute;
-  top: 1370px;
-  left: 200px;
-  height: 700px;
-}
-.our-team-vertical-line-center {
-  position: absolute;
-  top: 1370px;
-  left: 665px;
-  height: 700px;
-}
-.our-team-vertical-line-right {
-  position: absolute;
-  top: 1370px;
-  left: 1080px;
-  height: 700px;
+  align-items: center;
 }

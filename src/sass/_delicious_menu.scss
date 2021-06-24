@@ -17,8 +17,14 @@
   padding: 0px;
 }
 
+.delicious-menu-line {
+  margin-right: 40px;
+}
+
 .delicious-list-product {
   margin-right: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .delicious-list-block {
@@ -37,7 +43,7 @@
 }
 
 .delicious-paragraf {
-  margin: 30px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
   font-family: $font_accent;
   font-weight: bold;
   font-size: 18px;
@@ -58,7 +64,7 @@
   line-height: 1;
   font-weight: bold;
   color: $color_grey_accent;
-  margin: 40px 0 0 0;
+  margin: 50px 0 0 0;
 }
 .delicious-ul {
   margin-top: 0px;
@@ -71,4 +77,11 @@
 
 .delicious-list-description {
   margin: 5px 0 0 0;
+}
+
+.delicious-orange-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }

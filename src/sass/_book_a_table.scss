@@ -1,5 +1,5 @@
 .book-section {
-  padding: 100px 0px 100px 0px;
+  padding: 100px 0px 110px 0px;
 }
 
 .book-block {
@@ -12,7 +12,8 @@
 }
 
 .book-form {
-  padding-top: 15px;
+  padding: 0px;
+  margin-top: 20px;
 }
 
 .book-title {
@@ -23,6 +24,13 @@
   text-align: center;
   text-transform: uppercase;
   color: $color_black;
+}
+
+.book-orange-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .book-input-name,
@@ -72,6 +80,9 @@
   text-align: center;
   color: #333333;
 }
+.book-tel {
+  color: #333333;
+}
 .scrollup {
   width: 40px;
   height: 40px;
@@ -79,7 +90,5 @@
   position: fixed;
   bottom: 50px;
   right: 35px;
-  // display: none;
-  // text-indent: -9999px;
   background: url(../images/icon-top.png) no-repeat;
 }
