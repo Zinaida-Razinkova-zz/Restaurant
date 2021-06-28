@@ -1,11 +1,19 @@
 .events-overlay {
   height: 675x;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/specialtys-bg.jpg);
+  background-image: url(../images/event-bg@1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .our-team-overlay {
+    background-image: url(../images/event-bg@2x.jpg);
+  }
+}
+
 .events-block {
   padding: 100px 0px 100px 0px;
 }
