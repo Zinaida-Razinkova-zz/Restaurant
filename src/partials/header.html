@@ -25,7 +25,51 @@
   <img class="header-orange-line" src="./images/orange-line.png" alt="" width="60" />
   <p class="header-inscription">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
   <div class="header-button-block">
-    <a href="#BOOKING"><button data-modal-open class="header-button-book">BOOK TABLE</button></a>
+    <button data-modal-open class="header-button-book">BOOK TABLE</button>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="button-close">
+          <svg class="icon-close" width="11" height="11">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <!-- Модалка -->
+        <form class="modal-form">
+          <b class="modal-heading">Leave your details, we will call you back</b>
+          <div class="form-field">
+            <label for="name" class="form-lable">Name</label>
+            <input type="text" name="name" id="name" class="form-input" />
+          </div>
+          <div class="form-field">
+            <label for="tel" class="form-lable">Phone</label>
+            <input type="tel" name="phone" id="tel" class="form-input" />
+          </div>
+          <div class="form-field">
+            <label for="email" class="form-lable">Email</label>
+            <input type="email" name="email" id="email" class="form-input" />
+          </div>
+          <div class="form-field">
+            <label for="comment" class="form-lable">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Enter text"
+              class="modal-comment form-input"
+            ></textarea>
+          </div>
+          <div class="modal-checkbox">
+            <label for="agreement" class="terms">
+              <input type="checkbox" name="agreement" id="agreement" class="icon-checkbox" />
+              <span class="icon-checkbox-sprite"></span>
+              I agree to the transfer and processing of my data</label
+            >
+          </div>
+          <button type="submit" class="button-send">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- Modal -->
     <button data-modal-open class="header-button-explore">EXPLORE</button>
   </div>
   <a href="#MENU" name="">
