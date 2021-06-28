@@ -17,8 +17,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <!-- <include src="./partials/example.html"></include> -->
     <include src="./partials/header.html"></include>
     <include src="./partials/about_us.html"></include>
     <include src="./partials/our_team.html"></include>
@@ -30,8 +28,39 @@
     <include src="./partials/contact.html"></include>
     <include src="./partials/footer.html"></include>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./js/modal.js"></script>
+
+    <!-- Slider -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName('specialties-slide');
+        var dots = document.getElementsByClassName('specialties-slider-controls-dot');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+      }
+    </script>
+    <!-- Slider -->
+
     <!-- Modal Galerie -->
     <script>
       // Open the Modal
@@ -76,6 +105,7 @@
         dots[slideIndex - 1].className += ' active';
       }
     </script>
+    <!-- Modal Galerie -->
     <!-- Button to top -->
     <script type="text/javascript">
       $(document).ready(function () {
@@ -93,6 +123,7 @@
         });
       });
     </script>
+    <!-- Button to top -->
     <script src="./index.js"></script>
   </body>
 </html>
