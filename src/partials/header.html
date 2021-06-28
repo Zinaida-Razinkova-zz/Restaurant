@@ -27,45 +27,44 @@
   <div class="header-button-block">
     <button data-modal-open class="header-button-book">BOOK TABLE</button>
     <!-- Modal -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close class="button-close">
-          <svg class="icon-close" width="11" height="11">
+        <button data-modal-close class="modal-button-close">
+          <svg class="modal-icon-close" width="11" height="11">
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
-        <!-- Модалка -->
         <form class="modal-form">
           <b class="modal-heading">Leave your details, we will call you back</b>
-          <div class="form-field">
-            <label for="name" class="form-lable">Name</label>
-            <input type="text" name="name" id="name" class="form-input" />
+          <div class="modal-form-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
           </div>
-          <div class="form-field">
-            <label for="tel" class="form-lable">Phone</label>
-            <input type="tel" name="phone" id="tel" class="form-input" />
+          <div class="modal-form-field">
+            <label for="tel">Phone</label>
+            <input type="tel" name="phone" id="tel" />
           </div>
-          <div class="form-field">
-            <label for="email" class="form-lable">Email</label>
-            <input type="email" name="email" id="email" class="form-input" />
+          <div class="modal-form-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
           </div>
-          <div class="form-field">
-            <label for="comment" class="form-lable">Comment</label>
+          <div class="modal-form-field">
+            <label for="comment">Comment</label>
             <textarea
               name="comment"
               id="comment"
               placeholder="Enter text"
-              class="modal-comment form-input"
+              class="modal-comment"
             ></textarea>
           </div>
           <div class="modal-checkbox">
-            <label for="agreement" class="terms">
-              <input type="checkbox" name="agreement" id="agreement" class="icon-checkbox" />
-              <span class="icon-checkbox-sprite"></span>
+            <label for="agreement" class="modal-terms">
+              <input type="checkbox" name="agreement" id="agreement" class="modal-icon-checkbox" />
+              <span class="modal-icon-checkbox-sprite"></span>
               I agree to the transfer and processing of my data</label
             >
           </div>
-          <button type="submit" class="button-send">Send</button>
+          <button type="submit" class="modal-button-send">Send</button>
         </form>
       </div>
     </div>
