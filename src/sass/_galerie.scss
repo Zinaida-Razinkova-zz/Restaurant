@@ -3,3 +3,111 @@
   justify-content: center;
   margin: 0px;
 }
+
+.galerie-img {
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+// <!-- Modal Galerie -->
+
+.galerie-prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  &:hover {
+    background-color: $color_accent;
+  }
+}
+
+.galerie-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 20px;
+  border-radius: 3px 0 0 3px;
+  &:hover {
+    background-color: $color_accent;
+  }
+}
+
+.galerie-slide {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.galerie-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.galerie-modal-content {
+  position: relative;
+}
+
+.galerie-close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+
+  &:hover,
+  &:focus {
+    color: $color_accent;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.galerie-controls {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  .galerie-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fefefe;
+    border: transparent;
+    cursor: pointer;
+    transition: all 250ms $cubic;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    &.active,
+    &:hover {
+      background: $color_accent;
+    }
+  }
+}
