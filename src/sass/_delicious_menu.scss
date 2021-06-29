@@ -5,7 +5,7 @@
 .delicious-block {
   display: block;
   text-align: center;
-  width: 600px;
+  // width: 600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -13,14 +13,19 @@
 .delicious-list-menu {
   display: flex;
   justify-content: center;
-  margin: 50px 0 0 0;
-  padding: 0px;
+
+  // margin: 50px 20 0 20;
+  // padding: 50px 20px 0 20px;
 }
 
-.delicious-menu-line {
-  margin-right: 0px;
-}
+// .delicious-menu-line {
+//   margin-right: 0px;
+// }
 
+.delicious-block-paragraf {
+  margin-right: 40px;
+  margin-left: 40px;
+}
 .delicious-list-product {
   margin-right: 40px;
   display: flex;
