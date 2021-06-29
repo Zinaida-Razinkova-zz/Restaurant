@@ -4,50 +4,46 @@
       <div class="book-block-form">
         <h3 class="book-title">book a table</h3>
         <img class="our-team-orange-line" src="./images/orange-line.png" alt="" width="60" />
-        <form class="book-form" id="search-form">
+        <form
+          class="book-form"
+          id="book-form"
+          action="https://formspree.io/f/xzbyvrvz"
+          method="POST"
+        >
           <input
-            class="book-input-name"
-            type="text"
-            name="query"
-            autocomplete="off"
+            class="book-input"
             placeholder="Name"
-          />
-          <input
-            class="book-input-email"
             type="text"
-            name="query"
-            autocomplete="off"
-            placeholder="Email"
+            name="name"
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
+            required
           />
+          <input class="book-input" type="email" name="email" placeholder="email" required />
           <input
-            class="book-input-phone"
-            type="text"
-            name="query"
-            autocomplete="off"
+            class="book-input"
             placeholder="Phone"
+            type="tel"
+            name="tel"
+            pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
+            title="Номер телефона должен состоять из 11-12 цифр и может содержать цифры, пробелы, тире, пузатые скобки и может начинаться с +"
+            required
           />
           <input
-            class="book-input-people"
-            type="text"
-            name="query"
-            autocomplete="off"
+            class="book-input"
             placeholder="People"
-          />
-          <input
-            class="book-input-date"
             type="text"
-            name="query"
-            autocomplete="off"
-            placeholder="Date (mm/dd)"
+            name="people"
+            pattern="^[0-9]$"
+            title="Укажите количество человек цифрами, например, 11 или 4"
+            required
           />
-          <input
-            class="book-input-time"
-            type="text"
-            name="query"
-            autocomplete="off"
-            placeholder="Time"
-          />
-          <button data-modal-open class="book-button">BOOK NOW</button>
+          <input class="book-input" placeholder="Date (mm/dd)" type="text" name="date" />
+          <input class="book-input" type="text" name="time" placeholder="Time" />
+          <button data-modal-open id="book-form-button" class="book-button" type="submit">
+            BOOK NOW
+          </button>
+          <p id="book-form-status"></p>
         </form>
       </div>
       <div>

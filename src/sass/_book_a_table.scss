@@ -14,6 +14,7 @@
 .book-form {
   padding: 0px;
   margin-top: 20px;
+  position: relative;
 }
 
 .book-title {
@@ -33,12 +34,7 @@
   margin-top: 20px;
 }
 
-.book-input-name,
-.book-input-email,
-.book-input-phone,
-.book-input-people,
-.book-input-date,
-.book-input-time {
+.book-input {
   margin: 5px 0px 0px 0px;
   padding-left: 10px;
   width: 277px;

@@ -28,8 +28,58 @@
     <include src="./partials/contact.html"></include>
     <include src="./partials/footer.html"></include>
 
-    <script src="./js/modal.js"></script>
+    <!-- Form contact-->
+    <script>
+      var form = document.getElementById('contact-form');
 
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById('contact-form-status');
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json',
+          },
+        })
+          .then(response => {
+            status.innerHTML = 'Thank you, your message has been sent!';
+            form.reset();
+          })
+          .catch(error => {
+            status.innerHTML = 'Oops! There was a problem submitting your form';
+          });
+      }
+      form.addEventListener('submit', handleSubmit);
+    </script>
+    <!-- Form contact-->
+    <!-- Form book a table-->
+    <script>
+      var form = document.getElementById('book-form');
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById('book-form-status');
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json',
+          },
+        })
+          .then(response => {
+            status.innerHTML = 'Thank you, the order is accepted!';
+            form.reset();
+          })
+          .catch(error => {
+            status.innerHTML = 'Oops! There was a problem submitting your form';
+          });
+      }
+      form.addEventListener('submit', handleSubmit);
+    </script>
+    <!-- Form book a table-->
     <!-- Slider -->
     <script>
       var slideIndex = 1;

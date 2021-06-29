@@ -7,37 +7,34 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
       a, tempor magna.
     </p>
-    <form class="contact-form" id="search-form">
+    <form
+      class="contact-form"
+      id="contact-form"
+      action="https://formspree.io/f/xzbyvrvz"
+      method="POST"
+    >
       <div class="contact-form-block">
         <input
           class="contact-input-name"
           type="text"
-          name="query"
-          autocomplete="off"
+          name="name"
           placeholder="Name"
+          pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+          title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
+          required
         />
-        <input
-          class="contact-input-email"
-          type="text"
-          name="query"
-          autocomplete="off"
-          placeholder="Email"
-        />
+        <input class="contact-input-email" type="text" name="email" placeholder="Email" required />
         <input
           class="contact-input-phone"
-          type="text"
-          name="query"
-          autocomplete="off"
+          type="tel"
+          name="tel"
           placeholder="Phone"
+          pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
+          title="Номер телефона должен состоять из 11-12 цифр и может содержать цифры, пробелы, тире, пузатые скобки и может начинаться с +"
+          required
         />
       </div>
-      <input
-        class="contact-input-message"
-        type="text"
-        name="query"
-        autocomplete="off"
-        placeholder="Message"
-      />
+      <input class="contact-input-message" type="text" name="text" placeholder="Message" />
       <div class="contact-data">
         <div class="contact-data-block">
           <div class="contact-icon-block">
@@ -59,8 +56,9 @@
             <a href="" class="contact-data-title">office@mindblister.com </a>
           </div>
         </div>
-        <button data-modal-open class="book-button">SEND MESSAGE</button>
+        <button data-modal-open class="book-button" id="contact-form-button">SEND MESSAGE</button>
       </div>
+      <p class="contact-message" id="contact-form-status"></p>
     </form>
   </div>
 </section>
