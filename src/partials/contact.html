@@ -1,7 +1,7 @@
 <section id="CONTACT" class="container">
   <div class="contact-block">
     <h2 class="contact-title">CONTACT</h2>
-    <img class="contact-orange-line" src="./images/orange-line.png" alt="" width="60" />
+    <img class="contact-orange-line" src="./images/orange-line.png" alt="orange-line" width="60" />
 
     <p class="contact-paragraf">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
@@ -20,17 +20,23 @@
           name="name"
           placeholder="Name"
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-          title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
+          title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc required"
+        />
+        <input
+          class="contact-input-email"
+          type="text"
+          name="email"
+          placeholder="Email"
+          title="Enter your email "
           required
         />
-        <input class="contact-input-email" type="text" name="email" placeholder="Email" required />
         <input
           class="contact-input-phone"
           type="tel"
           name="tel"
           placeholder="Phone"
           pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
-          title="Номер телефона должен состоять из 11-12 цифр и может содержать цифры, пробелы, тире, пузатые скобки и может начинаться с +"
+          title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
           required
         />
       </div>
@@ -47,7 +53,7 @@
             <svg class="icon-phone" width="16px" height="12px">
               <use href="./images/sprite.svg#icon-phone"></use>
             </svg>
-            <a href="tel:+40 729 131 637" class="contact-data-title">+40 729 131 637</a>
+            <a href="tel:+40729131637" class="contact-data-title">+40 729 131 637</a>
           </div>
           <div class="contact-icon-block">
             <svg class="icon-envelop" width="16px" height="12px">

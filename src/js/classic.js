@@ -1,6 +1,6 @@
 const refs = {
-  controls: document.querySelector('#tabs-1 [data-controls]'),
-  panes: document.querySelector('#tabs-1 [data-panes]'),
+  controls: document.querySelector('#delicious-tabs-1 [data-controls]'),
+  panes: document.querySelector('#delicious-tabs-1 [delicious-data]'),
 };
 
 refs.controls.addEventListener('click', onControlsClick);
@@ -13,23 +13,23 @@ function onControlsClick(event) {
     return;
   }
 
-  const currentActiveControlItem = refs.controls.querySelector('.controls__item--active');
+  const currentActiveControlItem = refs.controls.querySelector('.delicious-controls__item--active');
 
   if (currentActiveControlItem) {
-    currentActiveControlItem.classList.remove('controls__item--active');
+    currentActiveControlItem.classList.remove('delicious-controls__item--active');
 
     const paneId = getPaneId(currentActiveControlItem);
     const pane = getPaneById(paneId);
-    pane.classList.remove('pane--active');
+    pane.classList.remove('delicious--active');
     // console.log(paneId);
   }
 
   const controlItem = event.target;
-  controlItem.classList.add('controls__item--active');
+  controlItem.classList.add('delicious-controls__item--active');
 
   const paneId = getPaneId(controlItem);
   const pane = getPaneById(paneId);
-  pane.classList.add('pane--active');
+  pane.classList.add('delicious--active');
   // console.log(pane);
 }
 

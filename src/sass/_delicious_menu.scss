@@ -5,7 +5,7 @@
 .delicious-block {
   display: block;
   text-align: center;
-  // width: 600px;
+
   margin-right: auto;
   margin-left: auto;
 }
@@ -13,14 +13,7 @@
 .delicious-list-menu {
   display: flex;
   justify-content: center;
-
-  // margin: 50px 20 0 20;
-  // padding: 50px 20px 0 20px;
 }
-
-// .delicious-menu-line {
-//   margin-right: 0px;
-// }
 
 .delicious-block-paragraf {
   margin-right: 40px;
@@ -89,4 +82,58 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+}
+
+// tabs
+.delicious-tabs {
+  margin-top: 40px;
+}
+
+.delicious-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.delicious-controls__item {
+  padding: 10px 30px;
+  border: none;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.delicious-controls__item--active {
+  color: rgb(248, 195, 23);
+}
+
+.delicious-big-block {
+  display: flex;
+  justify-content: center;
+}
+
+.delicious-small-block {
+  display: flex;
+  justify-content: center;
+}
+
+.delicious-id {
+  display: none;
+  padding: 15px;
+  animation: fadeEffect 500ms;
+}
+
+.delicious--active {
+  display: block;
+}
+
+/* Анимации */
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

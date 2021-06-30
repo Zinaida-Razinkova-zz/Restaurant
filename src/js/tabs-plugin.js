@@ -20,7 +20,7 @@ class Tabs {
     const refs = {};
 
     refs.controls = document.querySelector(`${root} [data-controls]`);
-    refs.panes = document.querySelector(`${root} [data-panes]`);
+    refs.panes = document.querySelector(`${root} [delicious-data]`);
 
     return refs;
   }
@@ -91,18 +91,9 @@ class Tabs {
 }
 
 const tabs1 = new Tabs({
-  rootSelector: '#tabs-1',
-  activeControlClass: 'controls__item--active',
-  activePaneClass: 'pane--active',
+  rootSelector: '#delicious-tabs-1',
+  activeControlClass: 'delicious-controls__item--active',
+  activePaneClass: 'delicious--active',
   activeTab: 2,
 });
 console.log(tabs1);
-
-const tabs2 = new Tabs({
-  rootSelector: '#tabs-2',
-  activeControlClass: 'controls__item--active',
-  activePaneClass: 'pane--active',
-  activeTab: 3,
-});
-
-console.log(tabs2);
