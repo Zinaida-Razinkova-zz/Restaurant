@@ -59,25 +59,6 @@
     </script>
     <!-- Slider -->
 
-    <!-- Button to top -->
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
-          } else {
-            $('.scrollup').fadeOut();
-          }
-        });
-
-        $('.scrollup').click(function () {
-          $('html, body').animate({ scrollTop: 0 }, 600);
-          return false;
-        });
-      });
-    </script>
-    <!-- Button to top -->
-
     <!-- Galerie -->
     <script>
       // Open the Modal
@@ -123,6 +104,26 @@
       }
     </script>
     <!-- Galerie -->
+
+    <!-- Button to top -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+          } else {
+            $('.scrollup').fadeOut();
+          }
+        });
+
+        $('.scrollup').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 600);
+          return false;
+        });
+      });
+    </script>
+    <!-- Button to top -->
+
     <script src="./js/form-booking.js"></script>
     <script src="./js/form-contact.js"></script>
     <script src="./js/classic.js"></script>
