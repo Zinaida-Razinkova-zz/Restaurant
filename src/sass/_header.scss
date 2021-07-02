@@ -66,14 +66,14 @@
   left: 563px;
 }
 .header-horizontal-line-left {
-  position: absolute;
-  top: 99px;
-  left: 153px;
+  position: relative;
+  top: -90px;
+  left: 18px;
 }
 .header-horizontal-line-right {
-  position: absolute;
-  top: 99px;
-  left: 880px;
+  position: relative;
+  top: -90px;
+  left: 250px;
 }
 
 .header-institution {
@@ -147,9 +147,9 @@
   display: inline-block;
   margin: 0px;
 
-  position: absolute;
-  top: 520px;
-  left: 130px;
+  position: relative;
+  top: -20px;
+  left: -80px;
 
   font-family: $font_accent;
   font-weight: bold;
@@ -162,9 +162,9 @@
 }
 
 .header-social-networks {
-  position: absolute;
-  top: 395px;
-  left: 1165px;
+  position: relative;
+  top: -355px;
+  left: 1005px;
 
   display: flex;
   flex-direction: column;
