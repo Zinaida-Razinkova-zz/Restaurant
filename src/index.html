@@ -15,60 +15,6 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Restaurant</title>
-  </head>
-  <body>
-    <include src="./partials/header.html"></include>
-    <include src="./partials/about_us.html"></include>
-    <include src="./partials/our_team.html"></include>
-    <include src="./partials/book_a_table.html"></include>
-    <include src="./partials/specialties.html"></include>
-    <include src="./partials/delicious_menu.html"></include>
-    <include src="./partials/private_events.html"></include>
-    <include src="./partials/galerie.html"></include>
-    <include src="./partials/contact.html"></include>
-    <include src="./partials/footer.html"></include>
-
-    <!-- Slider -->
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName('specialties-slide');
-        var dots = document.getElementsByClassName('specialties-slider-controls-dot');
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = 'none';
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(' active', '');
-        }
-        slides[slideIndex - 1].style.display = 'block';
-        dots[slideIndex - 1].className += ' active';
-      }
-
-      let i = 1;
-      setInterval(function () {
-        currentSlide(i);
-        i++;
-        if (i == 3) {
-          i = 1;
-        }
-      }, 3000);
-    </script>
-    <!-- Slider -->
-
     <!-- Galerie -->
     <script>
       // Open the Modal
@@ -132,6 +78,60 @@
         });
       });
     </script>
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/about_us.html"></include>
+    <include src="./partials/our_team.html"></include>
+    <include src="./partials/book_a_table.html"></include>
+    <include src="./partials/specialties.html"></include>
+    <include src="./partials/delicious_menu.html"></include>
+    <include src="./partials/private_events.html"></include>
+    <include src="./partials/galerie.html"></include>
+    <include src="./partials/contact.html"></include>
+    <include src="./partials/footer.html"></include>
+
+    <!-- Slider -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName('specialties-slide');
+        var dots = document.getElementsByClassName('specialties-slider-controls-dot');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+      }
+
+      let i = 1;
+      setInterval(function () {
+        currentSlide(i);
+        i++;
+        if (i == 3) {
+          i = 1;
+        }
+      }, 3000);
+    </script>
+    <!-- Slider -->
+
     <!-- Button to top -->
     <script src="./js/form-modal.js"></script>
     <script src="./js/modal.js"></script>
