@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Restaurant</title>
   </head>
   <body>
@@ -28,6 +29,13 @@
     <include src="./partials/galerie.html"></include>
     <include src="./partials/contact.html"></include>
     <include src="./partials/footer.html"></include>
+    <script src="./js/galerie.js"></script>
+    <script src="./js/form-modal.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/form-booking.js"></script>
+    <script src="./js/form-contact.js"></script>
+    <script src="./js/classic.js"></script>
+    <script src="./js/tabs-plugin.js"></script>
 
     <!-- Slider -->
     <script>
@@ -68,52 +76,6 @@
     </script>
     <!-- Slider -->
 
-    <!-- Galerie -->
-    <!-- <script>
-          // Open the Modal
-          function openGalerie() {
-            document.getElementById('galerie-modal').style.display = 'block';
-          }
-
-          // Close the Modal
-          function closeGalerie() {
-            document.getElementById('galerie-modal').style.display = 'none';
-          }
-
-          var slideIndex = 1;
-          show_Slides(slideIndex);
-
-          // Next/previous controls
-          function plusSlides(n) {
-            show_Slides((slideIndex += n));
-          }
-          function galerieSlide(n) {
-            show_Slides((slideIndex = n));
-          }
-
-          function show_Slides(n) {
-            var i;
-            var slides = document.getElementsByClassName('galerie-slide');
-            var dots = document.getElementsByClassName('galerie-dot');
-
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = 'none';
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(' active', '');
-            }
-            slides[slideIndex - 1].style.display = 'block';
-            dots[slideIndex - 1].className += ' active';
-          }
-        </script> -->
-    <!-- Galerie -->
-
     <!-- Button to top -->
     <script type="text/javascript">
       $(document).ready(function () {
@@ -132,13 +94,51 @@
       });
     </script>
     <!-- Button to top -->
-    <script src="./js/galerie.js"></script>
-    <script src="./js/form-modal.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/form-booking.js"></script>
-    <script src="./js/form-contact.js"></script>
-    <script src="./js/classic.js"></script>
-    <script src="./js/tabs-plugin.js"></script>
+
+    <script>
+      // Open the Modal
+      function openGalerie() {
+        document.getElementById('galerie-modal').style.display = 'block';
+      }
+
+      // Close the Modal
+      function closeGalerie() {
+        document.getElementById('galerie-modal').style.display = 'none';
+      }
+
+      var slideIndex = 1;
+      show_Slides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        show_Slides((slideIndex += n));
+      }
+      function galerieSlide(n) {
+        show_Slides((slideIndex = n));
+      }
+
+      function show_Slides(n) {
+        var i;
+        var slides = document.getElementsByClassName('galerie-slide');
+        var dots = document.getElementsByClassName('galerie-dot');
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+      }
+    </script>
+
     <script src="./index.js"></script>
   </body>
 </html>
