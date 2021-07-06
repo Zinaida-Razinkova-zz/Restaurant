@@ -62,7 +62,7 @@
       setInterval(function () {
         currentSlide(i);
         i++;
-        if (i == 5) {
+        if (i == 3) {
           i = 1;
         }
       }, 3000);
@@ -112,6 +112,25 @@
         slides[slideIndex - 1].style.display = 'block';
         dots[slideIndex - 1].className += ' active';
       }
+    </script>
+    <!-- Galerie -->
+
+    <!-- Button to top -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+          } else {
+            $('.scrollup').fadeOut();
+          }
+        });
+
+        $('.scrollup').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 600);
+          return false;
+        });
+      });
     </script>
     <!-- Button to top -->
     <script src="./js/form-modal.js"></script>
