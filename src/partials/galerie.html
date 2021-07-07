@@ -6,7 +6,6 @@
       src="./images/events3.jpg"
       alt="Galerie"
       width="320"
-      onclick="openGalerie();galerieSlide(1)"
     />
     <img
       class="galerie-img"
@@ -14,7 +13,6 @@
       src="./images/events4.jpg"
       alt="Galerie"
       width="320"
-      onclick="openGalerie();galerieSlide(2)"
     />
     <img
       class="galerie-img"
@@ -22,7 +20,6 @@
       src="./images/events5.jpg"
       alt="Galerie"
       width="320"
-      onclick="openGalerie();galerieSlide(3)"
     />
     <img
       class="galerie-img"
@@ -30,51 +27,6 @@
       src="./images/events6.jpg"
       alt="Galerie"
       width="320"
-      onclick="openGalerie();galerieSlide(4)"
     />
   </div>
 </section>
-
-<!-- Modal Galerie -->
-<div id="galerie-modal" class="galerie-modal">
-  <span class="galerie-close cursor" onclick="closeGalerie()">&times;</span>
-
-  <div class="galerie-modal-content container">
-    <img
-      src="./images/events3@4x.jpg"
-      alt="Galerie"
-      width="800"
-      height="800"
-      class="galerie-slide"
-    />
-    <img
-      src="./images/events4@4x.jpg"
-      alt="Galerie"
-      width="800"
-      height="800"
-      class="galerie-slide"
-    />
-    <img
-      src="./images/events5@4x.jpg"
-      alt="Galerie"
-      width="800"
-      height="800"
-      class="galerie-slide"
-    />
-    <img
-      src="./images/events6@4x.jpg"
-      alt="Galerie"
-      width="800"
-      height="800"
-      class="galerie-slide"
-    />
-    <a class="galerie-prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="galerie-next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <div class="galerie-controls">
-    <span class="galerie-dot" onclick="galerieSlide(1)"></span>
-    <span class="galerie-dot" onclick="galerieSlide(2)"></span>
-    <span class="galerie-dot" onclick="galerieSlide(3)"></span>
-    <span class="galerie-dot" onclick="galerieSlide(4)"></span>
-  </div>
-</div>

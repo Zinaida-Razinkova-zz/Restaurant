@@ -6,9 +6,7 @@
   "homepage": "https://Zinaida-Razinkova.github.io//Restaurant",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Restaurant/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "parcel build src/*.html --public-url /Restaurant/"
   },
   "repository": {
     "type": "git",
@@ -28,6 +26,7 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "jquery": "^3.6.0"
   }
 }
