@@ -6,6 +6,20 @@
   text-align: center;
   text-transform: uppercase;
   color: $color_black;
+  position: relative;
+}
+
+.contact-title:after {
+  content: '';
+  display: inline-block;
+  background-color: #e8c300;
+  width: 60px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
 }
 
 .contact-block {
@@ -16,7 +30,7 @@
   display: block;
   width: 600px;
   text-align: center;
-  margin: 20px auto 0px auto;
+  margin: 30px auto 0px auto;
   font-family: $font_accent;
   font-weight: bold;
   font-size: 18px;

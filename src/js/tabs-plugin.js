@@ -96,4 +96,4 @@ const tabs1 = new Tabs({
   activePaneClass: 'delicious--active',
   activeTab: 2,
 });
-console.log(tabs1);
+// console.log(tabs1);

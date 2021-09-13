@@ -11,28 +11,16 @@ body {
   font-family: #000000;
   .container {
     margin: auto;
-    padding: 0px 20px 0px 20px;
-    width: 100%;
-    @media screen and (min-width: 480px) {
-      width: 480px;
-      padding: 0px 28px 0px 28px;
-    }
-    @media screen and (min-width: 768px) {
-      width: 768px;
-      padding: 0px 35px 0px 35px;
-    }
-    @media screen and (min-width: 1280px) {
-      width: 1280px;
-      padding: 0px 45px 0px 45px;
-    }
+    width: 1280px;
+    padding: 0px 45px 0px 45px;
   }
 }
 ul {
   list-style: none;
 }
 
-// img {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-// }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

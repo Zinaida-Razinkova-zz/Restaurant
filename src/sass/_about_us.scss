@@ -14,13 +14,22 @@
   line-height: 1.33;
   text-transform: uppercase;
   color: $color_black;
+  position: relative;
 }
-.about-us-orange-line {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+
+.about-us-title:after {
+  content: '';
+  display: inline-block;
+  background-color: #e8c300;
+  width: 60px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
 }
+
 .about-us-subtitle,
 .about-us-paragraf {
   margin: 20px 0px 0px 0px;
@@ -32,6 +41,7 @@
 .about-us-text-block {
   width: 600px;
   text-align: center;
+  margin-top: 40px;
 }
 
 .about-us-img {

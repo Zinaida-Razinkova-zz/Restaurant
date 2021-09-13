@@ -43,6 +43,20 @@
   font-size: 36px;
   line-height: 1.33;
   color: $color_white;
+  position: relative;
+}
+
+.our-team-name:after {
+  content: '';
+  display: inline-block;
+  background-color: #e8c300;
+  width: 60px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
 }
 
 .our-team-orange-line {
@@ -54,7 +68,7 @@
 
 .our-team-subtitle,
 .our-team-paragraf {
-  margin: 30px 0px 0px 0px;
+  margin: 40px 0px 0px 0px;
   color: $color_white;
   font-family: $font_accent;
   font-size: 14px;

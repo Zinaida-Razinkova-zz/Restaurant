@@ -13,7 +13,7 @@
 
 .book-form {
   padding: 0px;
-  margin-top: 20px;
+  margin-top: 40px;
   position: relative;
 }
 
@@ -25,13 +25,20 @@
   text-align: center;
   text-transform: uppercase;
   color: $color_black;
+  position: relative;
 }
 
-.book-orange-line {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+.book-title:after {
+  content: '';
+  display: inline-block;
+  background-color: #e8c300;
+  width: 60px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
 }
 
 .book-input {

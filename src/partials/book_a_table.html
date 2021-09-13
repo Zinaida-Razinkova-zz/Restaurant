@@ -3,55 +3,55 @@
     <div class="book-block">
       <div class="book-block-form">
         <h3 class="book-title">book a table</h3>
-        <img
-          class="our-team-orange-line"
-          src="./images/orange-line.png"
-          alt="orange-line"
-          width="60"
-        />
         <form
           class="book-form"
           id="book-form"
           action="https://formspree.io/f/xzbyvrvz"
           method="POST"
         >
-          <input
-            class="book-input"
-            placeholder="Name"
-            type="text"
-            name="name"
-            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-            title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc "
-            required
-          />
-          <input
-            class="book-input"
-            type="email"
-            name="email"
-            placeholder="Email"
-            title="Enter your email "
-            required
-          />
-          <input
-            class="book-input"
-            placeholder="Phone"
-            type="tel"
-            name="tel"
-            pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
-            title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
-            required
-          />
-          <input
-            class="book-input"
-            placeholder="People"
-            type="text"
-            name="people"
-            pattern="^[0-9]$"
-            title="Indicate the number of people in numbers, for example, 11 or 4"
-            required
-          />
-          <input class="book-input" placeholder="Date (mm/dd)" type="text" name="date" />
-          <input class="book-input" type="text" name="time" placeholder="Time" />
+          <div>
+            <input
+              class="book-input"
+              placeholder="Name"
+              type="text"
+              name="name"
+              pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+              title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc "
+              required
+            />
+            <input
+              class="book-input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              title="Enter your email "
+              required
+            />
+          </div>
+          <div>
+            <input
+              class="book-input"
+              placeholder="Phone"
+              type="tel"
+              name="tel"
+              pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
+              title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
+              required
+            />
+            <input
+              class="book-input"
+              placeholder="People"
+              type="text"
+              name="people"
+              pattern="^[0-9]$"
+              title="Indicate the number of people in numbers, for example, 11 or 4"
+              required
+            />
+          </div>
+          <div>
+            <input class="book-input" placeholder="Date (mm/dd)" type="text" name="date" />
+            <input class="book-input" type="text" name="time" placeholder="Time" />
+          </div>
           <button id="book-form-button" class="book-button" type="submit">BOOK NOW</button>
           <p id="book-form-status"></p>
         </form>

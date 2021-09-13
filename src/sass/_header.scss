@@ -60,20 +60,12 @@
 }
 
 .header-orange-line {
+  background-color: #ffffff;
+  width: 60px;
   margin-top: 50px;
   position: relative;
   top: -25px;
   left: 563px;
-}
-.header-horizontal-line-left {
-  position: relative;
-  top: -90px;
-  left: 18px;
-}
-.header-horizontal-line-right {
-  position: relative;
-  top: -90px;
-  left: 250px;
 }
 
 .header-institution {
@@ -89,18 +81,32 @@
 }
 
 .header-name {
-  margin: 40px 70px 0px 0px;
+  margin: 40px 0px 0px 0px;
 
   font-family: $font_details;
   font-size: 96px;
   color: $color_white;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+}
+
+.header-name:after {
+  content: '';
+  display: inline-block;
+  background-color: #e8c300;
+  width: 60px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
 }
 
 .header-button-book {
   padding: 0px;
-  margin-right: 20px;
+  margin: 30px 20px 0px 0px;
   border-radius: 5px;
   min-width: 200px;
   height: 60px;
@@ -164,7 +170,7 @@
 .header-social-networks {
   position: relative;
   top: -355px;
-  left: 1005px;
+  left: 1070px;
 
   display: flex;
   flex-direction: column;
