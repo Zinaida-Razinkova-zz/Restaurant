@@ -168,9 +168,11 @@
 }
 
 .header-social-networks {
+  width: 60px;
+  margin: 0px;
   position: relative;
   top: -355px;
-  left: 1070px;
+  right: -1100px;
 
   display: flex;
   flex-direction: column;
