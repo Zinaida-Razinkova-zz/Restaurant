@@ -1,3 +1,5 @@
+window.currentSlide = currentSlide;
+
 var slideIndex = 2;
 showSlides(slideIndex);
 // console.log(slideIndex);
