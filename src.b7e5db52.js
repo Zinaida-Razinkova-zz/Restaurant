@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/header-bg@1x.jpg":[["header-bg@1x.b6b3298b.jpg","NCKv"],"NCKv"],"./../images/header-bg@2x.jpg":[["header-bg@2x.d6aad92e.jpg","IWLD"],"IWLD"],"./../images/team-bg@1x.jpg":[["team-bg@1x.d8962d09.jpg","F13L"],"F13L"],"./../images/team-bg@2x.jpg":[["team-bg@2x.2ecc0aa1.jpg","Z529"],"Z529"],"./../images/icon-top.png":[["icon-top.64cbcd91.png","P0eI"],"P0eI"],"./../images/event-bg@1x.jpg":[["event-bg@1x.d92b899b.jpg","j224"],"j224"],"./../images/event-bg@2x.jpg":[["event-bg@2x.4221c012.jpg","VC1R"],"VC1R"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/Restaurant/src.a9b36b73.js.map
+//# sourceMappingURL=/Restaurant/src.b7e5db52.js.map
