@@ -22,47 +22,44 @@
   <h1 class="header-name">hungry people</h1>
   <p class="header-inscription">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
   <div class="header-button-block">
-    <button data-modal-open class="header-button-book">BOOK TABLE</button>
-    <div class="modal-backdrop is-hidden" data-modal>
+    <button data-modal-open class="header-button-book" data-action="modal-open">BOOK TABLE</button>
+    <div class="modal-backdrop js-backdrop">
       <div class="modal">
-        <!-- Modal -->
-        <button data-modal-close class="modal-button-close">
-          <svg class="modal-icon-close" width="11" height="11">
-            <use href="./images/sprite.svg#close"></use>
-          </svg>
-        </button>
-        <form class="modal-form">
-          <b class="modal-heading">Leave your details, we will call you back</b>
-          <div class="modal-form-field">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div class="modal-form-field">
-            <label for="tel">Phone</label>
-            <input type="tel" name="phone" id="tel" />
-          </div>
-          <div class="modal-form-field">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div class="modal-form-field">
-            <label for="comment">Comment</label>
-            <textarea
-              name="comment"
-              id="comment"
-              placeholder="Enter text"
-              class="modal-comment"
-            ></textarea>
-          </div>
-          <div class="modal-checkbox">
-            <label for="agreement" class="modal-terms">
-              <input type="checkbox" name="agreement" id="agreement" class="modal-icon-checkbox" />
-              <span class="modal-icon-checkbox-sprite"></span>
-              I agree to the transfer and processing of my data</label
-            >
-          </div>
-          <button type="submit" class="modal-button-send" data-modal-close>Send</button>
-        </form>
+        <div>
+          <a href="" class="modal-close" data-action="modal-close">x</a>
+          <form
+            class="modal-form"
+            id="modal-form"
+            action="https://formspree.io/f/xzbyvrvz"
+            method="POST"
+          >
+            <b class="modal-heading">Leave your details, we will call you back</b>
+            <div class="modal-form-field">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                id="name"
+                pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc "
+                required
+              />
+            </div>
+            <div class="modal-form-field">
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone"
+                id="tel"
+                pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
+                title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
+                required
+              />
+            </div>
+            <button type="submit" class="modal-button-send">Send</button>
+            <p id="modal-form-status"></p>
+          </form>
+        </div>
       </div>
     </div>
     <button class="header-button-explore">EXPLORE</button>

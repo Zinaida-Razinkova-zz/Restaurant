@@ -1,6 +1,7 @@
 <section id="galerie" class="galerie">
-  <div class="container photo-block-img">
+  <div class="container galerie-block-img">
     <img
+      onclick="openFotoGallery();fotoSlide(1)"
       class="galerie-img"
       srcset="./images/events3@2x.jpg 2x"
       src="./images/events3.jpg"
@@ -8,6 +9,7 @@
       width="320"
     />
     <img
+      onclick="openFotoGallery();fotoSlide(2)"
       class="galerie-img"
       srcset="./images/events4@2x.jpg 2x"
       src="./images/events4.jpg"
@@ -15,6 +17,7 @@
       width="320"
     />
     <img
+      onclick="openFotoGallery();fotoSlide(3)"
       class="galerie-img"
       srcset="./images/events5@2x.jpg 2x"
       src="./images/events5.jpg"
@@ -22,11 +25,47 @@
       width="320"
     />
     <img
+      onclick="openFotoGallery();fotoSlide(4)"
       class="galerie-img"
       srcset="./images/events6@2x.jpg 2x"
       src="./images/events6.jpg"
       alt="Galerie"
       width="320"
     />
+  </div>
+  <div id="galerie-modal" class="galerie-modal">
+    <span class="galerie-close cursor" onclick="closeGallery()">&times;</span>
+    <div class="galerie-modal-content container">
+      <img
+        srcset="./images/events3@2x.jpg 2x"
+        src="./images/events-big3.jpg"
+        alt="Galerie"
+        width="550"
+        class="galerie-slide"
+      />
+      <img
+        srcset="./images/events4@2x.jpg 2x"
+        src="./images/events-big4.jpg"
+        alt="Galerie"
+        width="550"
+        class="galerie-slide"
+      />
+      <img
+        srcset="./images/events5@2x.jpg 2x"
+        src="./images/events-big5.jpg"
+        alt="Galerie"
+        width="550"
+        class="galerie-slide"
+      />
+      <img
+        srcset="./images/events6@2x.jpg 2x"
+        src="./images/events-big6.jpg"
+        alt="Galerie"
+        width="550"
+        class="galerie-slide"
+      />
+      <a class="galerie-prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="galerie-next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
   </div>
 </section>

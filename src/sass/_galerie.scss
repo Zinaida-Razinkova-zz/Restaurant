@@ -1,4 +1,4 @@
-.photo-block-img {
+.galerie-block-img {
   display: flex;
   justify-content: center;
   margin: 0px;
@@ -9,5 +9,84 @@
   &:hover {
     transform: scale(1.15);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.galerie-modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 50px;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.galerie-modal-content {
+  position: relative;
+}
+
+.galerie-close {
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 40px;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: $color_accent;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.galerie-slide {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+}
+
+.galerie-prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  margin-left: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  &:hover {
+    background-color: $color_accent;
+  }
+}
+
+.galerie-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 20px;
+  border-radius: 3px 0 0 3px;
+  &:hover {
+    background-color: $color_accent;
   }
 }
