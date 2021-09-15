@@ -17,11 +17,16 @@
 }
 
 .our-team-img {
-  margin-right: 80px;
+  @media screen and (min-width: 426px) {
+    margin-right: 80px;
+  }
 }
 
 .our-team-container {
   padding: 100px 0px 100px 0px;
+  @media screen and (max-width: 425px) {
+    padding: 50px 0px 50px 0px;
+  }
 }
 
 .our-team-title {
@@ -59,13 +64,6 @@
   transform: translateX(-50%);
 }
 
-.our-team-orange-line {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-
 .our-team-subtitle,
 .our-team-paragraf {
   margin: 40px 0px 0px 0px;
@@ -78,10 +76,15 @@
 .our-team-text-block {
   width: 600px;
   text-align: center;
+  @media screen and (max-width: 425px) {
+    width: 375px;
+  }
 }
 
 .our-team-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (min-width: 426px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

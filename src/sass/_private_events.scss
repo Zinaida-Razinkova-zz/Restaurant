@@ -16,6 +16,11 @@
 
 .events-block {
   padding: 100px 0px 100px 0px;
+
+  @media screen and (max-width: 425px) {
+    padding: 50px 0px 50px 0px;
+    position: relative;
+  }
 }
 
 .events-title {
@@ -43,6 +48,13 @@
   position: absolute;
   top: 100px;
   left: 475px;
+
+  @media screen and (max-width: 425px) {
+    position: absolute;
+    top: 150px;
+    left: 280px;
+    font-size: 20px;
+  }
 }
 
 .events-parties {
@@ -59,12 +71,21 @@
   position: absolute;
   top: 195px;
   left: 530px;
+
+  @media screen and (max-width: 425px) {
+    position: absolute;
+    top: 500px;
+    left: -60px;
+    font-size: 20px;
+  }
 }
 
 .events-block-img {
-  display: flex;
-  justify-content: center;
-  position: relative;
+  @media screen and (min-width: 426px) {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
 }
 .events-inscription {
   margin: 10px 0px 0px 0px;
@@ -74,4 +95,9 @@
   line-height: 1;
   text-align: center;
   color: $color_white;
+
+  @media screen and (max-width: 425px) {
+    font-size: 10px;
+    margin: 30px 0px 0px 0px;
+  }
 }

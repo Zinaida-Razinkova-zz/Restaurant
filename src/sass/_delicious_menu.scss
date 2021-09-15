@@ -1,5 +1,8 @@
 .delicious-section {
   padding: 100px 0px 100px 0px;
+  @media screen and (max-width: 425px) {
+    padding: 50px 0px 50px 0px;
+  }
 }
 
 .delicious-block {
@@ -104,9 +107,16 @@
 }
 
 .delicious-controls {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 4px;
+  @media screen and (min-width: 426px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+
+  @media screen and (max-width: 425px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .delicious-controls__item {
@@ -115,6 +125,11 @@
   color: black;
   font-weight: 500;
   text-decoration: none;
+
+  @media screen and (max-width: 425px) {
+    padding: 15px 8px 15px 8px;
+    font-size: 12px;
+  }
 }
 
 .delicious-controls__item--active {

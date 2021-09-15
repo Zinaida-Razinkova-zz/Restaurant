@@ -16,11 +16,15 @@
 
 .specialties-section {
   padding: 100px 0px 100px 0px;
-  // overflow: hidden;
+  @media screen and (max-width: 425px) {
+    padding: 50px 0px 50px 0px;
+  }
 }
 
 .specialties-img {
-  margin-right: 80px;
+  @media screen and (min-width: 426px) {
+    margin-right: 80px;
+  }
 }
 
 .specialties-title {
@@ -78,11 +82,16 @@
 .specialties-text-block {
   width: 600px;
   text-align: center;
+  @media screen and (max-width: 425px) {
+    width: 375px;
+  }
 }
 
 .specialties-block {
-  display: flex;
-  justify-content: center;
+  @media screen and (min-width: 426px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .specialties-orange-line {
@@ -96,6 +105,9 @@
 .specialties-slider-controls {
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 425px) {
+    margin: 20px 0px 0px 0px;
+  }
 }
 
 .specialties-slider-controls-dot {

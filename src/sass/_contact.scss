@@ -24,6 +24,9 @@
 
 .contact-block {
   padding: 100px 0px 100px 0px;
+  @media screen and (max-width: 425px) {
+    padding: 50px 0px 0px 0px;
+  }
 }
 
 .contact-paragraf {
@@ -36,6 +39,10 @@
   font-size: 18px;
   line-height: 1.56;
   color: $color_black;
+
+  @media screen and (max-width: 425px) {
+    width: 375px;
+  }
 }
 .contact-input-name,
 .contact-input-email,
@@ -51,6 +58,11 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
+
+  @media screen and (max-width: 425px) {
+    width: 375px;
+    margin: 10px 0px 0px 0px;
+  }
 }
 
 .contact-input-message {
@@ -61,14 +73,21 @@
   background: #e5e5e5;
   border-radius: 5px;
   border: none;
+
+  @media screen and (max-width: 425px) {
+    width: 375px;
+    height: 100px;
+  }
 }
 
 .contact-form-block {
-  display: flex;
-  justify-content: center;
+  @media screen and (min-width: 426px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.book-button {
+.contact-button {
   padding: 0px;
   margin: 5px 0px 0px 0px;
   border-radius: 5px;
@@ -88,21 +107,32 @@
   &:hover {
     transform: scale(1.05);
   }
+
+  @media screen and (max-width: 425px) {
+    min-width: 375px;
+  }
 }
 .contact-data {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+  @media screen and (min-width: 426px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
 }
 
 .contact-data-block {
-  display: flex;
+  @media screen and (min-width: 426px) {
+    display: flex;
+  }
 }
 
 .contact-icon-block {
   display: flex;
   align-items: center;
   margin-right: 60px;
+  @media screen and (max-width: 425px) {
+    margin: 10px 113px 10px 113px;
+  }
 }
 .icon-location,
 .icon-phone,

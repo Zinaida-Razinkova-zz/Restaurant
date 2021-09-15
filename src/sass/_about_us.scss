@@ -1,12 +1,18 @@
 .about-us-block {
-  padding: 100px 0px 100px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (min-width: 426px) {
+    padding: 100px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 50px 0px 50px 0px;
+  }
 }
 
 .about-us-title {
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
   text-align: center;
   font-family: $font_details;
   font-weight: normal;
@@ -39,11 +45,19 @@
   text-align: center;
 }
 .about-us-text-block {
+  display: inline-block;
   width: 600px;
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 0px 0px 0px;
+
+  @media screen and (max-width: 425px) {
+    width: 375px;
+    margin: 20px 0px 0px 0px;
+  }
 }
 
 .about-us-img {
-  margin-left: 80px;
+  @media screen and (min-width: 426px) {
+    margin-left: 80px;
+  }
 }
