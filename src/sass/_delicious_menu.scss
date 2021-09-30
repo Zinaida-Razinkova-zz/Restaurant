@@ -1,6 +1,6 @@
 .delicious-section {
   padding: 100px 0px 100px 0px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     padding: 50px 0px 50px 0px;
   }
 }
@@ -107,13 +107,13 @@
 }
 
 .delicious-controls {
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
     margin-bottom: 4px;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     display: flex;
     justify-content: center;
   }
@@ -126,7 +126,7 @@
   font-weight: 500;
   text-decoration: none;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     padding: 15px 8px 15px 8px;
     font-size: 12px;
   }

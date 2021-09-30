@@ -1,12 +1,12 @@
 .book-section {
   padding: 100px 0px 110px 0px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     padding: 50px 0px 50px 0px;
   }
 }
 
 .book-block {
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
   }
@@ -23,13 +23,8 @@
 }
 
 .book-title {
-  margin: 0px;
-  font-family: $font_details;
-  font-size: 36px;
-  line-height: 1.33;
-  text-align: center;
-  text-transform: uppercase;
-  color: $color_black;
+  // margin: 0px;
+  color: $color_black;  
   position: relative;
 }
 
@@ -55,7 +50,7 @@
   border-radius: 5px;
   border: none;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     margin: 10px 0px 0px 0px;
   }
 }
@@ -81,7 +76,7 @@
     transform: scale(1.05);
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     min-width: 280px;
     margin: 10px 0px 0px 0px;
   }
@@ -97,7 +92,7 @@
   text-align: center;
   color: #333333;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     font-size: 10px;
   }
 }
@@ -112,7 +107,7 @@
   bottom: 50px;
   right: 35px;
   background: url(../images/icon-top.png) no-repeat;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     bottom: 50px;
     left: 350px;
     z-index: 12;

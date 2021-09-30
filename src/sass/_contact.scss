@@ -23,8 +23,8 @@
 }
 
 .contact-block {
-  padding: 100px 0px 100px 0px;
-  @media screen and (max-width: 425px) {
+  padding: 100px 0px 0px 0px;
+  @media screen and (max-width: $mobile) {
     padding: 50px 0px 0px 0px;
   }
 }
@@ -40,7 +40,7 @@
   line-height: 1.56;
   color: $color_black;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     width: 375px;
   }
 }
@@ -59,7 +59,7 @@
     margin-right: 10px;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     width: 375px;
     margin: 10px 0px 0px 0px;
   }
@@ -74,14 +74,14 @@
   border-radius: 5px;
   border: none;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     width: 375px;
     height: 100px;
   }
 }
 
 .contact-form-block {
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
   }
@@ -108,12 +108,12 @@
     transform: scale(1.05);
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     min-width: 375px;
   }
 }
 .contact-data {
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -121,7 +121,7 @@
 }
 
 .contact-data-block {
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
@@ -130,7 +130,7 @@
   display: flex;
   align-items: center;
   margin-right: 60px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     margin: 10px 113px 10px 113px;
   }
 }
@@ -161,4 +161,15 @@
   margin-top: 20px;
 
   text-align: right;
+}
+
+.contact-map {
+  @media screen and (min-width: $desktop) {
+    width: 1190px;
+    height: 600px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 375px;
+    height: 400px;
+  }
 }

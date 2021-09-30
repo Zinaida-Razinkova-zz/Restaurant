@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   margin: 0px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     flex-wrap: wrap;
   }
 }
@@ -14,7 +14,7 @@
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     max-width: 160px;
     margin: 10px;
   }
@@ -45,7 +45,7 @@
   font-size: 40px;
   font-weight: bold;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     left: 325px;
   }
 
@@ -63,7 +63,7 @@
   margin-right: auto;
   max-width: 550px;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     max-width: 300px;
   }
 }

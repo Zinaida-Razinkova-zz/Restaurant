@@ -16,13 +16,13 @@
 
 .specialties-section {
   padding: 100px 0px 100px 0px;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     padding: 50px 0px 50px 0px;
   }
 }
 
 .specialties-img {
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 80px;
   }
 }
@@ -82,13 +82,13 @@
 .specialties-text-block {
   width: 600px;
   text-align: center;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     width: 375px;
   }
 }
 
 .specialties-block {
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
   }
@@ -105,7 +105,7 @@
 .specialties-slider-controls {
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     margin: 20px 0px 0px 0px;
   }
 }

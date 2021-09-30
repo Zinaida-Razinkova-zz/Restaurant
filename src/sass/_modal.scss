@@ -10,7 +10,7 @@
   transform: scale(1.05);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     width: 375px;
     top: 25%;
     left: 25px;
@@ -178,7 +178,7 @@ body.show-modal .modal {
     color: $color_accent;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     right: -165px;
   }
 }

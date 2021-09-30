@@ -1,9 +1,5 @@
 .header-section {
-  position: relative;
-}
-
-.header-overlay {
-  height: 800px;
+  max-height: 800px;
   background-image: url(../images/header-bg@1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,25 +15,32 @@
 }
 
 .header-nav {
-  display: flex;
-  justify-content: center;
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 150px;
+    }
 }
 
 .header-list {
-  display: flex;
-  justify-content: space-evenly;
   margin: 0px;
   padding: 0px;
-
-  @media screen and (max-width: 425px) {
-    display: inline;
-    margin: 0px;
-    padding: 0px;
+  @media screen and (min-width: $desktop) {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80px;
+  }
+  @media screen and (max-width: $mobile) {
+    text-align: center;
   }
 }
-.header-list-right {
-  margin: 45px 0px 0px 70px;
-
+.header-item {
   font-family: $font_accent;
   font-size: 12px;
   font-weight: bold;
@@ -47,46 +50,23 @@
   &:hover {
     transform: scale(1.05);
   }
-
-  @media screen and (max-width: 425px) {
-    margin: 20px 0px 0px 0px;
-    text-align: center;
+  @media screen and (max-width: $mobile) {
+    margin: 15px 0px 15px 0px;
   }
 }
-.header-list-left {
-  margin: 45px 70px 0px 0px;
-  font-family: $font_accent;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 1.5;
-  letter-spacing: 0em;
-  color: $color_white;
 
+.header-logo {
   &:hover {
     transform: scale(1.05);
   }
 
-  @media screen and (max-width: 425px) {
-    margin: 20px 0px 0px 0px;
-    text-align: center;
-  }
-}
-
-.logo {
-  margin-top: 15px;
-  &:hover {
-    transform: scale(1.05);
+  @media screen and (min-width: $desktop) {
+   position: absolute;
+   margin: 25px 520px 0px 520px;
   }
 
-  @media screen and (min-width: 426px) {
-    position: absolute;
-  }
-
-  @media screen and (max-width: 425px) {
-    position: absolute;
-    top: -60px;
-    left: 30px;
-    width: 50px;
+  @media screen and (max-width: $mobile) {
+    width: 70px;
   }
 }
 
@@ -100,7 +80,7 @@
   letter-spacing: 0.5em;
   color: $color_white;
   text-align: center;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     margin: 100px 0px 0px 0px;
   }
 }
@@ -148,7 +128,7 @@
     transform: scale(1.05);
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width:$mobile) {
     margin: 50px 0px 0px 0px;
   }
 }
@@ -173,7 +153,7 @@
     transform: scale(1.05);
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     margin: 30px 0px 0px 0px;
   }
 }
@@ -199,7 +179,7 @@
 
   transform: rotate(-90deg);
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     display: none;
   }
 }
@@ -250,22 +230,22 @@
     transform: scale(1.05);
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile) {
     margin: 50px auto 0px auto;
   }
 }
 
 //Mобильное меню
 .header-button {
-  display: inline-flex;
-  margin: 25px 0px 0px 340px;
+  width: 22px;
+  height: 22px;
   padding: 0px;
   border: none;
   background-color: transparent;
   fill: $color_accent;
   position: relative;
   z-index: 8;
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 
@@ -283,14 +263,14 @@
   display: none;
 }
 
-.header-menu-container {
-  @media screen and (max-width: 425px) {
+.header-menu {
+  @media screen and (max-width: $mobile) {
     display: none;
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 330px;
+    height: auto;
 
     background-color: $color_accent;
     z-index: 7;
@@ -299,7 +279,7 @@
       display: block;
     }
   }
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
