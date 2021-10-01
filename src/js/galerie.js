@@ -25,7 +25,7 @@ function fotoSlide(n) {
 
 function show_Slides(n) {
   var i;
-  var slides = document.getElementsByClassName('galerie-slide');
+  var slides = document.getElementsByClassName('galerie-modal__slide');
 
   if (n > slides.length) {
     slideIndex = 1;

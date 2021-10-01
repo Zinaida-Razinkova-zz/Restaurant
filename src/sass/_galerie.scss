@@ -1,4 +1,4 @@
-.galerie-block-img {
+.galerie-wrapper {
   display: flex;
   justify-content: center;
   margin: 0px;
@@ -33,21 +33,14 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.galerie-modal-content {
-  position: relative;
-}
 
-.galerie-close {
+.galerie-modal__close {
   color: white;
   position: absolute;
-  top: 0px;
-  right: 25px;
+  top: 10px;
+  right: 50px;
   font-size: 40px;
   font-weight: bold;
-
-  @media screen and (max-width: $mobile) {
-    left: 325px;
-  }
 
   &:hover,
   &:focus {
@@ -57,10 +50,9 @@
   }
 }
 
-.galerie-slide {
+.galerie-modal__slide {
   display: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto;
   max-width: 550px;
 
   @media screen and (max-width: $mobile) {
@@ -68,7 +60,7 @@
   }
 }
 
-.galerie-prev {
+.galerie-modal__prev {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -87,7 +79,7 @@
   }
 }
 
-.galerie-next {
+.galerie-modal__next {
   cursor: pointer;
   position: absolute;
   top: 50%;

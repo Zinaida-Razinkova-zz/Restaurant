@@ -92,8 +92,8 @@ class Tabs {
 
 const tabs1 = new Tabs({
   rootSelector: '#delicious-tabs-1',
-  activeControlClass: 'delicious-controls__item--active',
-  activePaneClass: 'delicious--active',
+  activeControlClass: 'delicious-tabs__item--active',
+  activePaneClass: 'delicious-active',
   activeTab: 2,
 });
 // console.log(tabs1);

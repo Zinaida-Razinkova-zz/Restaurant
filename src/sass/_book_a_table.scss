@@ -5,15 +5,12 @@
   }
 }
 
-.book-block {
+.book-wrapping {
   @media screen and (min-width: $desktop) {
     display: flex;
+    align-items: center;
     justify-content: center;
   }
-}
-.book-block-form {
-  display: block;
-  text-align: center;
 }
 
 .book-form {
@@ -41,7 +38,7 @@
   transform: translateX(-50%);
 }
 
-.book-input {
+.book-form__input {
   margin: 5px 0px 0px 0px;
   padding-left: 10px;
   width: 277px;
@@ -55,7 +52,7 @@
   }
 }
 
-.book-button {
+.book-form__button {
   padding: 0px;
   margin: 5px 0px 0px 0px;
   border-radius: 5px;
@@ -82,7 +79,7 @@
   }
 }
 
-.book-inscription {
+.book-time {
   margin: 10px 0px 0px 0px;
 
   font-family: $font_accent;
@@ -99,7 +96,7 @@
 .book-tel {
   color: #333333;
 }
-.scrollup {
+.book-scrollup {
   width: 40px;
   height: 40px;
   opacity: 0.4;

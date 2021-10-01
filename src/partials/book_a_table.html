@@ -1,9 +1,8 @@
-<section id="booking">
+<section id="booking" class="book-section">
   <div class="container">
-  <div class="book-section">
-    <div class="book-block">
-      <div class="book-block-form">
-        <h2 class="title book-title">book a table</h2>
+    <div class="book-wrapping">
+      <div>
+        <h2 class="book-title title ">Book a table</h2>
         <form
           class="book-form"
           id="book-form"
@@ -12,7 +11,7 @@
         >
           <div>
             <input
-              class="book-input"
+              class="book-form__input"
               placeholder="Name"
               type="text"
               name="name"
@@ -21,7 +20,7 @@
               required
             />
             <input
-              class="book-input"
+              class="book-form__input"
               type="email"
               name="email"
               placeholder="Email"
@@ -31,7 +30,7 @@
           </div>
           <div>
             <input
-              class="book-input"
+              class="book-form__input"
               placeholder="Phone"
               type="tel"
               name="tel"
@@ -40,7 +39,7 @@
               required
             />
             <input
-              class="book-input"
+              class="book-form__input"
               placeholder="People"
               type="text"
               name="people"
@@ -50,29 +49,26 @@
             />
           </div>
           <div>
-            <input class="book-input" placeholder="Date (mm/dd)" type="text" name="date" />
-            <input class="book-input" type="text" name="time" placeholder="Time" />
+            <input class="book-form__input" placeholder="Date (mm/dd)" type="text" name="date" />
+            <input class="book-form__input" type="text" name="time" placeholder="Time" />
           </div>
-          <button id="book-form-button" class="book-button" type="submit">BOOK NOW</button>
+          <button class="book-form__button" type="submit"  id="book-form-button">BOOK NOW</button>
           <p id="book-form-status"></p>
         </form>
       </div>
-      <div>
         <img
           class="book-img"
           srcset="./images/book@2x.png 2x"
           src="./images/book.png"
           alt="Book a table"
-          width="475"
+          width="600"
           height="475"
         />
-      </div>
     </div>
-    <p class="book-inscription">
+    <p class="book-time">
       Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone:
       <span><a href="tel:+40729131637" class="book-tel">+40 729 131 637</a></span>
     </p>
   </div>
-  <a href="#" class="scrollup"></a>
-  </div>
+  <a href="#" class="book-scrollup"></a>
 </section>

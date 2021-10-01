@@ -1,6 +1,6 @@
 <section id="galerie">
   <div class="container">
-    <div class="galerie-block-img">
+    <div class="galerie-wrapper">
     <img
       onclick="openFotoGallery();fotoSlide(1)"
       class="galerie-img"
@@ -40,15 +40,14 @@
     </div>
   
   <div id="galerie-modal" class="galerie-modal">
-    <span class="galerie-close cursor" onclick="closeGallery()">&times;</span>
-    <div class="galerie-modal-content container">
+    <span class="galerie-modal__close" onclick="closeGallery()">&times;</span>
       <img
         srcset="./images/events3@2x.jpg 2x"
         src="./images/events-big3.jpg"
         alt="Galerie"
         width="550"
         height="550"
-        class="galerie-slide"
+        class="galerie-modal__slide"
       />
       <img
         srcset="./images/events4@2x.jpg 2x"
@@ -56,7 +55,7 @@
         alt="Galerie"
         width="550"
         height="550"
-        class="galerie-slide"
+        class="galerie-modal__slide"
       />
       <img
         srcset="./images/events5@2x.jpg 2x"
@@ -64,7 +63,7 @@
         alt="Galerie"
         width="550"
         height="550"
-        class="galerie-slide"
+        class="galerie-modal__slide"
       />
       <img
         srcset="./images/events6@2x.jpg 2x"
@@ -72,11 +71,10 @@
         alt="Galerie"
         width="550"
         height="550"
-        class="galerie-slide"
+        class="galerie-modal__slide"
       />
-      <a class="galerie-prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="galerie-next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
+      <a class="galerie-modal__prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="galerie-modal__next" onclick="plusSlides(1)">&#10095;</a>
   </div>
 </div>
 </section>

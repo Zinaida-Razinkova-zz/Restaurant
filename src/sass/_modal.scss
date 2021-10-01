@@ -17,7 +17,7 @@
   }
 }
 
-.modal-backdrop {
+.backdrop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@
   visibility: hidden;
 }
 
-.modal-heading {
+.modal-form__title {
   font-family: $font_accent;
   font-weight: bold;
   font-size: 18px;
@@ -49,25 +49,13 @@
   margin: 20px 0px 12px 0px;
 }
 
-.modal-terms {
-  font-family: $font_accent;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: #757575;
-
-  display: inline-flex;
-  align-items: center;
-}
 
 .modal-form {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.modal-form-field {
+.modal-form__wrapper {
   position: relative;
 
   margin-bottom: 10px;
@@ -75,8 +63,7 @@
   display: flex;
   flex-direction: column;
 
-  & input,
-  textarea {
+  & input {
     margin: 0px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -135,7 +122,7 @@
   }
 }
 
-.modal-button-send {
+.modal-button__send {
   padding: 0px;
   margin-right: 20px;
   border-radius: 5px;
@@ -154,7 +141,7 @@
   margin-bottom: 40px;
 }
 
-body.show-modal .modal-backdrop {
+body.show-modal .backdrop {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;

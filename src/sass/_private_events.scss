@@ -14,7 +14,7 @@
   }
 }
 
-.events-block {
+.events-section{
   padding: 100px 0px 100px 0px;
 
   @media screen and (max-width: $mobile) {
@@ -80,14 +80,14 @@
   }
 }
 
-.events-block-img {
+.events-wrapper {
   @media screen and (min-width: 426px) {
     display: flex;
     justify-content: center;
     position: relative;
   }
 }
-.events-inscription {
+.events-tel {
   margin: 10px 0px 0px 0px;
 
   font-family: $font_accent;

@@ -1,10 +1,12 @@
+.contact-section {
+  padding: 100px 0px 0px 0px;
+  @media screen and (max-width: $mobile) {
+    padding: 50px 0px 0px 0px;
+  }
+}
 .contact-title {
   margin: 0px;
-  font-family: $font_details;
-  font-size: 36px;
-  line-height: 1.33;
   text-align: center;
-  text-transform: uppercase;
   color: $color_black;
   position: relative;
 }
@@ -22,12 +24,7 @@
   transform: translateX(-50%);
 }
 
-.contact-block {
-  padding: 100px 0px 0px 0px;
-  @media screen and (max-width: $mobile) {
-    padding: 50px 0px 0px 0px;
-  }
-}
+
 
 .contact-paragraf {
   display: block;
@@ -44,9 +41,7 @@
     width: 375px;
   }
 }
-.contact-input-name,
-.contact-input-email,
-.contact-input-phone {
+.contact-form__input {
   margin: 40px 0px 0px 0px;
   padding-left: 10px;
   width: 420px;
@@ -58,14 +53,13 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
-
   @media screen and (max-width: $mobile) {
     width: 375px;
     margin: 10px 0px 0px 0px;
   }
 }
 
-.contact-input-message {
+.contact-form__input--message {
   margin: 10px 0px 0px 0px;
   padding-left: 10px;
   width: 1190px;
@@ -80,7 +74,7 @@
   }
 }
 
-.contact-form-block {
+.contact-form__wrapping {
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
@@ -112,7 +106,7 @@
     min-width: 375px;
   }
 }
-.contact-data {
+.contact-footer {
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
@@ -120,13 +114,13 @@
   }
 }
 
-.contact-data-block {
+.contact-adress {
   @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
 
-.contact-icon-block {
+.contact-adress__wrapping {
   display: flex;
   align-items: center;
   margin-right: 60px;
@@ -134,13 +128,11 @@
     margin: 10px 113px 10px 113px;
   }
 }
-.icon-location,
-.icon-phone,
-.icon-envelop {
+.contact-adress__icon {
   margin-right: 5px;
 }
 
-.contact-data-title {
+.contact-adress__text {
   margin: 0px;
 
   font-family: $font_accent;

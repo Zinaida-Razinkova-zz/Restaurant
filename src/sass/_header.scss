@@ -26,6 +26,21 @@
     }
 }
 
+.header-logo {
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media screen and (min-width: $desktop) {
+   position: absolute;
+   margin: 25px 520px 0px 520px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 70px;
+  }
+}
+
 .header-list {
   margin: 0px;
   padding: 0px;
@@ -55,22 +70,7 @@
   }
 }
 
-.header-logo {
-  &:hover {
-    transform: scale(1.05);
-  }
-
-  @media screen and (min-width: $desktop) {
-   position: absolute;
-   margin: 25px 520px 0px 520px;
-  }
-
-  @media screen and (max-width: $mobile) {
-    width: 70px;
-  }
-}
-
-.header-institution {
+.header-name {
   margin: 150px 0px 0px 0px;
 
   font-family: $font_accent;
@@ -85,7 +85,7 @@
   }
 }
 
-.header-name {
+.header-title {
   margin: 40px 0px 0px 0px;
 
   font-family: $font_details;
@@ -96,7 +96,7 @@
   position: relative;
 }
 
-.header-name:after {
+.header-title:after {
   content: '';
   display: inline-block;
   background-color: $color_accent;
@@ -109,7 +109,33 @@
   transform: translateX(-50%);
 }
 
-.header-button-book {
+.header-time {
+  display: inline-block;
+  margin: 0px;
+
+  position: relative;
+  top: -20px;
+  left: -80px;
+
+  font-family: $font_accent;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: $color_white;
+
+  transform: rotate(-90deg);
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.header-button__wrapper {
+  text-align: center;
+}
+
+.header-button__book {
   padding: 0px;
   margin: 30px 20px 0px 0px;
   border-radius: 5px;
@@ -133,7 +159,7 @@
   }
 }
 
-.header-button-explore {
+.header-button__explore {
   padding: 0px;
   margin-left: 20px;
   border-radius: 5px;
@@ -158,71 +184,7 @@
   }
 }
 
-.header-button-block {
-  text-align: center;
-}
-
-.header-inscription {
-  display: inline-block;
-  margin: 0px;
-
-  position: relative;
-  top: -20px;
-  left: -80px;
-
-  font-family: $font_accent;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 1;
-  text-align: center;
-  color: $color_white;
-
-  transform: rotate(-90deg);
-
-  @media screen and (max-width: $mobile) {
-    display: none;
-  }
-}
-
-.header-social-networks {
-  width: 60px;
-  margin: 0px;
-  position: relative;
-  top: -355px;
-  right: -1100px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.header-link-fb,
-.header-link-twit,
-.header-link-insta {
-  margin-bottom: 20px;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    background-color: $color_accent;
-  }
-}
-
-.header-icons-fb {
-  margin: 10px 0px 0px 19px;
-}
-
-.header-icons-twit,
-.header-icons-insta {
-  margin: 20px 0px 0px 19px;
-}
-
-.header-arrow-to-down {
+.header-arrow {
   display: block;
   margin: 80px auto 0px auto;
 
@@ -235,8 +197,17 @@
   }
 }
 
+.header-networks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  top: -355px;
+  right: -1100px;
+}
+
 //Mобильное меню
-.header-button {
+.header-button__burger{
   width: 22px;
   height: 22px;
   padding: 0px;
@@ -249,17 +220,17 @@
     display: none;
   }
 
-  .header-icon-close {
+  .header-button__icon--close {
     display: none;
   }
 }
 
-.header-button.is-open .header-icon-close {
+.header-button__burger.is-open .header-button__icon--close {
   display: block;
   fill: #ffffff;
 }
 
-.header-button.is-open .header-icon-burger {
+.header-button__burger.is-open .header-button__icon--burger {
   display: none;
 }
 
