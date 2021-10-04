@@ -24,62 +24,75 @@
   transform: translateX(-50%);
 }
 
-
-
 .contact-paragraf {
-  display: block;
-  width: 600px;
   text-align: center;
-  margin: 30px auto 0px auto;
-  font-family: $font_accent;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.56;
+  margin: 40px 0px 0px 0px;
   color: $color_black;
+}
 
-  @media screen and (max-width: $mobile) {
-    width: 375px;
+.contact-form{
+  @media screen and (min-width: 426px) and (max-width: 1279px) {
+    display: flex;
+  flex-direction:column;
+  align-items: center;
+  }
+  
+}
+
+.contact-form__wrapper {
+  @media screen and (min-width: 426px) and (max-width: 1279px) {
+    display: flex;
+  flex-direction:column;
+  align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
   }
 }
+
 .contact-form__input {
   margin: 40px 0px 0px 0px;
   padding-left: 10px;
-  width: 420px;
-  height: 60px;
+  width: 100%;
+  max-width: 420px;
+  min-height: 60px;
+  align-items: center;
   background: #e5e5e5;
   border-radius: 5px;
   border: none;
 
   &:not(:last-child) {
     margin-right: 10px;
+    @media screen and (min-width: 426px) and (max-width: 1279px) {
+      margin-right: 0px;
+    }
   }
   @media screen and (max-width: $mobile) {
-    width: 375px;
+    min-width: 375px;
     margin: 10px 0px 0px 0px;
   }
+
+  
 }
 
 .contact-form__input--message {
   margin: 10px 0px 0px 0px;
   padding-left: 10px;
-  width: 1190px;
-  height: 120px;
+  width: 100%;
+  max-width: 1190px;
+  min-height: 120px;
   background: #e5e5e5;
   border-radius: 5px;
   border: none;
 
   @media screen and (max-width: $mobile) {
-    width: 375px;
-    height: 100px;
+    max-width: 375px;
+    min-height: 100px;
   }
 }
 
-.contact-form__wrapping {
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    justify-content: center;
-  }
-}
+
 
 .contact-button {
   padding: 0px;
@@ -156,12 +169,6 @@
 }
 
 .contact-map {
-  @media screen and (min-width: $desktop) {
-    width: 1190px;
-    height: 600px;
-  }
-  @media screen and (max-width: $mobile) {
-    width: 375px;
-    height: 400px;
-  }
+  width: 100%;
+  height: auto;
 }

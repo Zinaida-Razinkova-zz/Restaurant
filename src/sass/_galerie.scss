@@ -9,14 +9,10 @@
 
 .galerie-img {
   cursor: pointer;
+  width: 25%;
   &:hover {
     transform: scale(1.15);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  @media screen and (max-width: $mobile) {
-    max-width: 160px;
-    margin: 10px;
   }
 }
 
@@ -37,7 +33,7 @@
 .galerie-modal__close {
   color: white;
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 50px;
   font-size: 40px;
   font-weight: bold;
@@ -63,11 +59,10 @@
 .galerie-modal__prev {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 35%;
+  left:5%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
-  margin-left: 30px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -82,10 +77,9 @@
 .galerie-modal__next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 35%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
   color: white;
   font-weight: bold;
   font-size: 20px;

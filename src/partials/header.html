@@ -6,14 +6,14 @@
      <img src="./images/logo.png" width="150px"/>
      </a>
     <button
-      class="header-button__burger"
+      class="header-buttonBurger"
       aria-controls="header-menu-container"
       aria-expanded="false"
       type="button"
       data-menu-button>
       <svg width="22" height="22" aria-label="Mobile menu">
-        <use class="header-button__icon--close" href="./images/sprite2.svg#header-close"></use>
-        <use class="header-button__icon--burger" href="./images/sprite2.svg#header-burger"></use>
+        <use class="header-buttonBurger__close" href="./images/sprite2.svg#header-close"></use>
+        <use class="header-buttonBurger__burger" href="./images/sprite2.svg#header-burger"></use>
       </svg>
     </button>
     <div class="header-menu" data-menu>
@@ -35,8 +35,8 @@
   <p class="header-name">RESTAURANT</p>
   <h1 class="header-title">Hungry people</h1>
   <p class="header-time">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
-  <div class="header-button__wrapper">
-    <button data-modal-open class="header-button__book" data-action="modal-open">BOOK TABLE</button>
+  <div class="header-wrapper">
+    <button data-modal-open class="header-buttonBook" data-action="modal-open">BOOK TABLE</button>
     <div class="backdrop">
       <div class="modal">
         <div>
@@ -54,7 +54,6 @@
                 name="name"
                 placeholder="Name"
                 id="name"
-                pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                 title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc "
                 required
               />
@@ -65,7 +64,6 @@
                 name="phone"
                 placeholder="Phone"
                 id="tel"
-                pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
                 title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
                 required
               />
@@ -76,7 +74,7 @@
         </div>
       </div>
     </div>
-    <button class="header-button__explore">EXPLORE</button>
+    <button class="header-buttonExplore">EXPLORE</button>
   </div>
   <a href="#menu">
     <img

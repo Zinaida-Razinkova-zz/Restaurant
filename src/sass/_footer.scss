@@ -7,7 +7,11 @@
   display: flex;
   justify-content: center;
 }
-
+.footer-link{
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
 .footer-copyright {
   font-family: $color_white;
   font-weight: normal;

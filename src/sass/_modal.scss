@@ -12,7 +12,7 @@
 
   @media screen and (max-width: $mobile) {
     width: 375px;
-    top: 25%;
+    top: 15%;
     left: 25px;
   }
 }
@@ -124,7 +124,7 @@
 
 .modal-button__send {
   padding: 0px;
-  margin-right: 20px;
+  margin: 0px;
   border-radius: 5px;
   min-width: 200px;
   height: 60px;
@@ -136,9 +136,6 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 1.67;
-
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 body.show-modal .backdrop {

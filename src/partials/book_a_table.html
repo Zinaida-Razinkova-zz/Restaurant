@@ -1,8 +1,8 @@
 <section id="booking" class="book-section">
   <div class="container">
-    <div class="book-wrapping">
-      <div>
-        <h2 class="book-title title ">Book a table</h2>
+    <div class="book-wrapper">
+      <div class="book-content">
+        <h2 class="book-content__title title ">Book a table</h2>
         <form
           class="book-form"
           id="book-form"
@@ -15,7 +15,6 @@
               placeholder="Name"
               type="text"
               name="name"
-              pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
               title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc "
               required
             />
@@ -34,7 +33,6 @@
               placeholder="Phone"
               type="tel"
               name="tel"
-              pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
               title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
               required
             />
@@ -43,7 +41,6 @@
               placeholder="People"
               type="text"
               name="people"
-              pattern="^[0-9]$"
               title="Indicate the number of people in numbers, for example, 11 or 4"
               required
             />

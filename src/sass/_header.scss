@@ -4,6 +4,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media screen and (max-width: $mobile) {
+   padding-bottom: 40px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -12,6 +15,8 @@
   .header-overlayay {
     background-image: url(../images/header-bg@2x.jpg);
   }
+
+  
 }
 
 .header-nav {
@@ -131,13 +136,16 @@
   }
 }
 
-.header-button__wrapper {
+.header-wrapper {
   text-align: center;
+  margin-top: 40px;
+  @media screen and (max-width:$mobile) {
+    margin-top: 50px;  }
 }
 
-.header-button__book {
+.header-buttonBook {
   padding: 0px;
-  margin: 30px 20px 0px 0px;
+  margin-right: 15px;
   border-radius: 5px;
   min-width: 200px;
   height: 60px;
@@ -155,13 +163,13 @@
   }
 
   @media screen and (max-width:$mobile) {
-    margin: 50px 0px 0px 0px;
+    margin: 0px;
   }
 }
 
-.header-button__explore {
+.header-buttonExplore {
   padding: 0px;
-  margin-left: 20px;
+  margin-left: 15px;
   border-radius: 5px;
   min-width: 200px;
   height: 60px;
@@ -198,16 +206,21 @@
 }
 
 .header-networks {
+  width: 22px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
   top: -355px;
-  right: -1100px;
+  left: 1100px;
+
+  @media screen and (max-width:$mobile) {
+    display: none;
+  }
 }
 
 //Mобильное меню
-.header-button__burger{
+.header-buttonBurger{
   width: 22px;
   height: 22px;
   padding: 0px;
@@ -220,17 +233,17 @@
     display: none;
   }
 
-  .header-button__icon--close {
+  .header-buttonBurger__close {
     display: none;
   }
 }
 
-.header-button__burger.is-open .header-button__icon--close {
+.header-buttonBurger.is-open .header-buttonBurger__close {
   display: block;
   fill: #ffffff;
 }
 
-.header-button__burger.is-open .header-button__icon--burger {
+.header-buttonBurger.is-open .header-buttonBurger__burger {
   display: none;
 }
 
