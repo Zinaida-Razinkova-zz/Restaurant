@@ -75,6 +75,11 @@
   }
 }
 
+.header-itemNone{
+  @media screen and (max-width: 423px) {
+    display: none;
+  }
+}
 .header-name {
   margin: 150px 0px 0px 0px;
 
@@ -99,6 +104,9 @@
   text-align: center;
   text-transform: uppercase;
   position: relative;
+  @media screen and (max-width: 424px) {
+    font-size: 70px;
+  }
 }
 
 .header-title:after {

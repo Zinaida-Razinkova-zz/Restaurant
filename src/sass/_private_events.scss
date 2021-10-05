@@ -1,8 +1,10 @@
 .events-section{
   padding: 100px 0px 100px 0px;
-  // position: relative;
   @media screen and (max-width: $mobile) {
     padding: 50px 0px 50px 0px;
+  }
+   @media screen and (max-width: 424px) {
+    display: none;
   }
 }
 
@@ -34,55 +36,56 @@
 }
 
 .events-weddings {
-  top: 250px;
-  left: 500px;
+  top: 120px;
+  left: 460px;
   transform: rotate(+90deg);
-  @media screen and (max-width: $mobile) {
-    top: 150px;
-    left: 300px;
+
+  @media screen and (max-width: 1279px) {
+    top: 100px;
+    left: 645px;
     font-size: 20px;
   }
 
-  @media screen and (min-width: 426px) and (max-width: 1279px) {
-    top: 170px;
-    left: 520px;
+  @media screen and (max-width: 768px) {
+    top: 100px;
+    left: 515px;
+    font-size: 20px;
   }
+
+  @media screen and (max-width: 767px) {
+    top: 80px;
+    left: 285px;
+    font-size: 18px;
+  }
+
 }
 
-// .b2{
-//   max-width: 600px;
-//   height: 450px;
-//   position: relative;
-// }
 
 .events-parties {
+  top: 270px;
+  left: 540px;
   transform: rotate(-90deg);
-  @media screen and (max-width: 425px) {
-    top: 500px;
-    left: -30px;
+  @media screen and (max-width: 1279px) {
+    top: 770px;
+    left: 140px;
     font-size: 20px;
   }
-
-  // @media screen and (min-width: 426px) and (max-width: 767px) {
-  //   top: 820px;
-  //   left: 15px;
-  // }
-
-  // @media screen and (min-width: 768px) and (max-width:820px) {
-  //   top: 820px;
-  //   left: 135px;
-  // }
-
-  @media screen and (min-width: $desktop) {
-    // top: 370px;
-  // left: 590px;
+  @media screen and (max-width: 768px) {
+    top: 770px;
+    left: 10px;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 425px) {
+    top: 450px;
+    left: -45px;
+    font-size: 18px;
   }
 }
 
 .events-wrapper {
-  
+  position: relative;
   @media screen and (max-width: $mobile) {
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   }
@@ -90,6 +93,7 @@
     display: flex;
     justify-content: center;
   }
+  
 }
 .events-tel {
   margin: 10px 0px 0px 0px;

@@ -1,3 +1,9 @@
+.galerie-section{
+  @media screen and (max-width: 423px) {
+  display: none;
+}
+}
+
 .galerie-wrapper {
   display: flex;
   justify-content: center;
