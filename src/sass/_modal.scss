@@ -4,7 +4,7 @@
 
   min-width: 310px;
 
-  background-color: #ffffff;
+  background-color: var(--color1);
   border-radius: 7px;
 
   transform: scale(1.05);
@@ -38,19 +38,17 @@
 }
 
 .modal-form__title {
-  font-family: $font_accent;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--color5);
 
   display: block;
   margin: 20px 0px 12px 0px;
 }
-
 
 .modal-form {
   padding-left: 40px;
@@ -94,17 +92,16 @@
 
     &:hover,
     &:focus {
-      border: 1px solid $color_accent;
+      border: 1px solid var(--color3);
     }
   }
   & label {
-    font-family: $font_accent;
     font-weight: normal;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
 
-    color: #000000;
+    color: var(--color2);
 
     text-align: left;
     margin-bottom: 4px;
@@ -114,12 +111,12 @@
 
     &:hover,
     &:focus {
-      border: 1px solid $color_accent;
+      border: 1px solid var(--color3);
     }
   }
   &:hover {
     .icon-modal-name {
-      fill: $color_accent;
+      fill: var(--color3);
     }
   }
 }
@@ -132,9 +129,8 @@
   height: 60px;
   border: none;
 
-  color: $color_white;
-  background-color: $color_accent;
-  font-family: $font_accent;
+  color: var(--color1);
+  background-color: var(--color3);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.67;
@@ -154,14 +150,14 @@ body.show-modal .modal {
   position: relative;
   right: -185px;
   top: 10px;
-  font-family: Verdana;
   font-style: normal;
   font-size: 20px;
-  color: #000000;
+  color: var(--color2);
   text-decoration: none;
 
-  &:hover {
-    color: $color_accent;
+  &:hover,
+  :focus {
+    color: var(--color3);
   }
 
   @media screen and (max-width: $mobile) {

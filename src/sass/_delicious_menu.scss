@@ -13,15 +13,15 @@
 }
 
 .delicious-title {
-  margin: 0px; 
+  margin: 0px;
   text-align: center;
-  color: $color_black;
+  color: var(--color2);
   position: relative;
 }
 
-.delicious-paragraf {
+.delicious-paragraph {
   margin: 40px 0px 0px 0px;
-  color: $color_black;
+  color: var(--color2);
 }
 
 // tabs
@@ -45,7 +45,7 @@
 .delicious-tabs__item {
   padding: 10px 30px;
   border: none;
-  color: black;
+  color: var(--color2);
   font-weight: 500;
   text-decoration: none;
   position: relative;
@@ -56,10 +56,10 @@
   }
 }
 
-.delicious-tabs__item:not(:last-child):after{
+.delicious-tabs__item:not(:last-child):after {
   content: '';
   display: inline-block;
-  background-color: $color_grey;
+  background-color: var(--color4);
   width: 50px;
   height: 1px;
   position: absolute;
@@ -83,11 +83,11 @@
 }
 
 .delicious-tabs__dish {
-  font-family: $font_details;
+  font-family: var(--font2);
   font-size: 18px;
   line-height: 1;
   font-weight: bold;
-  color: $color_grey_accent;
+  color: var(--color5);
   margin: 50px 0 0 0;
 
   @media screen and (max-width: $mobile) {
@@ -106,7 +106,7 @@
 }
 
 .delicious-tabs__item--active {
-  color: $color_accent;
+  color: var(--color3);
 }
 
 .delicious-active {

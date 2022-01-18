@@ -1,5 +1,5 @@
 .footer-section {
-  background-color: $color_black;
+  background-color: var(--color2);
   padding: 45px 0px 45px 0px;
 }
 
@@ -7,13 +7,12 @@
   display: flex;
   justify-content: center;
 }
-.footer-link{
+.footer-link {
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
 .footer-copyright {
-  font-family: $color_white;
   font-weight: normal;
   font-size: 12px;
   line-height: 1;

@@ -1,9 +1,9 @@
-.events-section{
+.events-section {
   padding: 100px 0px 100px 0px;
   @media screen and (max-width: $mobile) {
     padding: 50px 0px 50px 0px;
   }
-   @media screen and (max-width: 424px) {
+  @media screen and (max-width: 424px) {
     display: none;
   }
 }
@@ -24,14 +24,15 @@
   }
 }
 
-.events-weddings,.events-parties{
+.events-weddings,
+.events-parties {
   margin: 0px;
-  font-family: $font_details;
+  font-family: var(--font2);
   font-size: 24px;
   line-height: 0.5;
   text-align: center;
   text-transform: uppercase;
-  color: $color_white;
+  color: var(--color1);
   position: absolute;
 }
 
@@ -57,9 +58,7 @@
     left: 285px;
     font-size: 18px;
   }
-
 }
-
 
 .events-parties {
   top: 270px;
@@ -85,24 +84,22 @@
 .events-wrapper {
   position: relative;
   @media screen and (max-width: $mobile) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
   }
-  
 }
 .events-tel {
   margin: 10px 0px 0px 0px;
-
-  font-family: $font_accent;
   font-size: 12px;
+  font-family: inherit;
   line-height: 1;
   text-align: center;
-  color: $color_white;
+  color: var(--color1);
 
   @media screen and (max-width: $mobile) {
     font-size: 10px;

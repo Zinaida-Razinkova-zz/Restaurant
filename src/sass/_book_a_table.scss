@@ -5,12 +5,12 @@
   }
 }
 
-.book-wrapper{
-    @media screen and (min-width: $desktop) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.book-wrapper {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .book-form {
@@ -19,13 +19,13 @@
   position: relative;
 }
 
-.book-content{
+.book-content {
   text-align: center;
 }
 
 .book-content__title {
   margin: 0px;
-  color: $color_black;  
+  color: var(--color2);
   position: relative;
 }
 
@@ -36,7 +36,7 @@
   background: #e5e5e5;
   border-radius: 5px;
   border: none;
-
+  font-family: inherit;
   @media screen and (max-width: $mobile) {
     width: 100%;
     min-width: 277px;
@@ -53,20 +53,21 @@
   padding: 0px;
   margin: 5px 0px 0px 0px;
   border-radius: 5px;
- 
+
   min-height: 60px;
 
   text-align: center;
   border: none;
 
-  color: $color_white;
-  background-color: $color_accent;
-  font-family: $font_accent;
+  color: var(--color1);
+  background-color: var(--color3);
+  font-family: inherit;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.67;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.05);
   }
   @media screen and (max-width: $mobile) {
@@ -78,9 +79,8 @@
   @media screen and (min-width: $desktop) {
     min-width: 277px;
   }
-
 }
-.book-img{
+.book-img {
   @media screen and (max-width: $mobile) {
     display: none;
   }
@@ -88,13 +88,12 @@
 
 .book-time {
   margin: 10px 0px 0px 0px;
-
-  font-family: $font_accent;
+  font-family: inherit;
   font-weight: bold;
   font-size: 12px;
   line-height: 1;
   text-align: center;
-  color: #333333;
+  color: var(--color5);
 
   @media screen and (max-width: $mobile) {
     font-size: 10px;
@@ -105,7 +104,7 @@
   }
 }
 .book-tel {
-  color: #333333;
+  color: var(--color5);
 }
 .book-scrollup {
   width: 40px;

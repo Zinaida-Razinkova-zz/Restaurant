@@ -40,24 +40,21 @@
   text-align: center;
 }
 
-.team-content__title{
+.team-content__title {
   margin: 0px;
-  color: $color_white;
+  color: var(--color1);
   position: relative;
 }
 
 .team-content__subtitle,
-.team-content__paragraf {
-  color: $color_white;
+.team-content__paragraph {
+  font-family: inherit;
+  color: var(--color1);
 }
 
 .team-content__paragraf {
   margin: 20px 0px 0px 0px;
 }
-.team-content__subtitle{
+.team-content__subtitle {
   margin: 40px 0px 0px 0px;
 }
-
-
-
-

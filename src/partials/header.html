@@ -1,101 +1,101 @@
-  <section class="header-section">
-  <div class="container">
-  <header>
-  <nav class="header-nav">
-    <a class="header-logo" href="index.html">
-     <img src="./images/logo.png" width="150px"/>
-     </a>
-    <button
-      class="header-buttonBurger"
-      aria-controls="header-menu-container"
-      aria-expanded="false"
-      type="button"
-      data-menu-button>
-      <svg width="22" height="22" aria-label="Mobile menu">
-        <use class="header-buttonBurger__close" href="./images/sprite2.svg#header-close"></use>
-        <use class="header-buttonBurger__burger" href="./images/sprite2.svg#header-burger"></use>
-      </svg>
-    </button>
-    <div class="header-menu" data-menu>
-      <ul class="header-list">
-        <li class="header-item"><a href="">HOME</a></li>
-        <li class="header-item"><a href="#about">ABOUT</a></li>
-        <li class="header-item"><a href="#team">TEAM</a></li>
-        <li class="header-item"><a href="#booking">BOOKING</a></li>
-      </ul>
-      <ul class="header-list">
-        <li class="header-item header-itemNone"><a href="#menu">MENU</a></li>
-        <li class="header-item header-itemNone"><a href="#events">EVENTS</a></li>
-        <li class="header-item header-itemNone"><a href="#galerie">GALERIE</a></li>
-        <li class="header-item"><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </nav>
+  
+  <header class="header">
+    <div class="container">
+          <nav class="header-nav">
+            <a class="header-logo" href="index.html">
+             <img src="./images/logo.png" width="150px"/>
+             </a>
+            <button
+              class="header-buttonBurger"
+              aria-controls="header-menu-container"
+              aria-expanded="false"
+              type="button"
+              data-menu-button>
+              <svg width="22" height="22" aria-label="Mobile menu">
+                <use class="header-buttonBurger__close" href="./images/sprite2.svg#header-close"></use>
+                <use class="header-buttonBurger__burger" href="./images/sprite2.svg#header-burger"></use>
+              </svg>
+            </button>
+            <div class="header-menu" data-menu>
+              <ul class="header-list">
+                <li class="header-item"><a href="">HOME</a></li>
+                <li class="header-item"><a href="#about">ABOUT</a></li>
+                <li class="header-item"><a href="#team">TEAM</a></li>
+                <li class="header-item"><a href="#booking">BOOKING</a></li>
+              </ul>
+              <ul class="header-list">
+                <li class="header-item header-itemNone"><a href="#menu">MENU</a></li>
+                <li class="header-item header-itemNone"><a href="#events">EVENTS</a></li>
+                <li class="header-item header-itemNone"><a href="#galerie">GALERIE</a></li>
+                <li class="header-item"><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p class="header-name">RESTAURANT</p>
+          <h1 class="header-title">Hungry people</h1>
+          <p class="header-time">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+          <div class="header-wrapper">
+            <button data-modal-open class="header-buttonBook" data-action="modal-open">BOOK TABLE</button>
+            <div class="backdrop">
+              <div class="modal">
+                <div>
+                  <a href="" class="modal-close" data-action="modal-close">x</a>
+                  <form
+                    class="modal-form"
+                    id="modal-form"
+                    action="https://formspree.io/f/xzbyvrvz"
+                    method="POST"
+                  >
+                    <b class="modal-form__title">Leave your details, we will call you back</b>
+                    <div class="modal-form__wrapper">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        id="name"
+                        title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc "
+                        required
+                      />
+                    </div>
+                    <div class="modal-form__wrapper">
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone"
+                        id="tel"
+                        title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
+                        required
+                      />
+                    </div>
+                    <button type="submit" class="modal-button__send">Send</button>
+                    <p id="modal-form__status"></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <button class="header-buttonExplore">EXPLORE</button>
+          </div>
+          <a href="#menu">
+            <img
+              class="header-arrow"
+              src="./images/down-btn.png"
+              alt="arrow"
+              width="60"
+              height="60"
+            />
+          </a>
+          <div class="header-networks">
+            <a href="" class="networks-link">
+              <img  src="./images/fb.png" alt="Facebbok link" width="18" height="18" />
+            </a>
+            <a href="" class="networks-link">
+              <img  src="./images/twit.png" alt="Facebbok link" width="18" height="18" />
+            </a>
+            <a href="" class="networks-link">
+              <img  src="./images/insta.png" alt="Instagram link" width="18" height="18" />
+            </a>
+          </div>
+  </div>
 </header>
-  <p class="header-name">RESTAURANT</p>
-  <h1 class="header-title">Hungry people</h1>
-  <p class="header-time">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
-  <div class="header-wrapper">
-    <button data-modal-open class="header-buttonBook" data-action="modal-open">BOOK TABLE</button>
-    <div class="backdrop">
-      <div class="modal">
-        <div>
-          <a href="" class="modal-close" data-action="modal-close">x</a>
-          <form
-            class="modal-form"
-            id="modal-form"
-            action="https://formspree.io/f/xzbyvrvz"
-            method="POST"
-          >
-            <b class="modal-form__title">Leave your details, we will call you back</b>
-            <div class="modal-form__wrapper">
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                id="name"
-                title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc "
-                required
-              />
-            </div>
-            <div class="modal-form__wrapper">
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone"
-                id="tel"
-                title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
-                required
-              />
-            </div>
-            <button type="submit" class="modal-button__send">Send</button>
-            <p id="modal-form__status"></p>
-          </form>
-        </div>
-      </div>
-    </div>
-    <button class="header-buttonExplore">EXPLORE</button>
-  </div>
-  <a href="#menu">
-    <img
-      class="header-arrow"
-      src="./images/down-btn.png"
-      alt="arrow"
-      width="60"
-      height="60"
-    />
-  </a>
-  <div class="header-networks">
-    <a href="" class="networks-link">
-      <img  src="./images/fb.png" alt="Facebbok link" width="18" height="18" />
-    </a>
-    <a href="" class="networks-link">
-      <img  src="./images/twit.png" alt="Facebbok link" width="18" height="18" />
-    </a>
-    <a href="" class="networks-link">
-      <img  src="./images/insta.png" alt="Instagram link" width="18" height="18" />
-    </a>
-  </div>
-  </div>
-</section>
+
 

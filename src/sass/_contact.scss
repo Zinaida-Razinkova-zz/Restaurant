@@ -7,14 +7,14 @@
 .contact-title {
   margin: 0px;
   text-align: center;
-  color: $color_black;
+  color: var(--color2);
   position: relative;
 }
 
 .contact-title:after {
   content: '';
   display: inline-block;
-  background-color: $color_accent;
+  background-color: var(--color3);
   width: 60px;
   height: 5px;
   border-radius: 5px;
@@ -24,26 +24,26 @@
   transform: translateX(-50%);
 }
 
-.contact-paragraf {
+.contact-paragraph {
   text-align: center;
+  font-family: inherit;
   margin: 40px 0px 0px 0px;
-  color: $color_black;
+  color: var(--color2);
 }
 
-.contact-form{
+.contact-form {
   @media screen and (min-width: 426px) and (max-width: 1279px) {
     display: flex;
-  flex-direction:column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
-  
 }
 
 .contact-form__wrapper {
   @media screen and (min-width: 426px) and (max-width: 1279px) {
     display: flex;
-  flex-direction:column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -104,17 +104,17 @@
   text-align: center;
   border: none;
 
-  color: $color_white;
-  background-color: $color_accent;
-  font-family: $font_accent;
+  color: var(--color1);
+  background-color: var(--color3);
   font-weight: bold;
   font-size: 12px;
   line-height: 1.67;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.05);
   }
- 
+
   @media screen and (max-width: $mobile) {
     min-width: 375px;
   }
@@ -157,12 +157,10 @@
 
 .contact-adress__text {
   margin: 0px;
-
-  font-family: $font_accent;
   font-size: 12px;
   line-height: 1;
   text-align: center;
-  color: $color_black;
+  color: var(--color2);
 }
 
 .contact-message {

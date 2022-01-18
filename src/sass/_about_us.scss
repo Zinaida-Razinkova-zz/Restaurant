@@ -1,4 +1,4 @@
-.about-section{
+.about-section {
   padding: 70px 0px 70px 0px;
   @media screen and (max-width: $mobile) {
     padding: 50px 0px 50px 0px;
@@ -13,23 +13,29 @@
   }
 }
 .about-content {
-text-align: center;
+  text-align: center;
 }
 
 .about-content__title {
-  color: $color_black;
+  color: var(--color2);
   position: relative;
   margin: 0px;
 }
 
-.about-content__paragraf {
+.about-content__paragraph,
+.about-content__subtitle {
+  font-family: inherit;
+  color: var(--color2);
+}
+
+.about-content__paragraph {
   margin: 20px 0px 0px 0px;
 }
-.about-content__subtitle{
+.about-content__subtitle {
   margin: 40px 0px 0px 0px;
 }
 
-.about-img{
+.about-img {
   @media screen and (max-width: $mobile) {
     display: none;
   }
