@@ -14,9 +14,9 @@
 }
 
 .book-form {
+  position: relative;
   padding: 0px;
   margin-top: 40px;
-  position: relative;
 }
 
 .book-content {
@@ -30,6 +30,7 @@
 }
 
 .book-form__input {
+  display: inline-block;
   margin: 5px 0px 0px 0px;
   padding-left: 10px;
   min-height: 60px;
@@ -51,7 +52,7 @@
 
 .book-form__button {
   padding: 0px;
-  margin: 5px 0px 0px 0px;
+  margin: 10px 0 0 0;
   border-radius: 5px;
 
   min-height: 60px;

@@ -1,19 +1,15 @@
 .modal {
-  z-index: 3;
   position: absolute;
-
+  z-index: 3;
   min-width: 310px;
-
   background-color: var(--color1);
   border-radius: 7px;
-
   transform: scale(1.05);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: $mobile) {
     max-width: 375px;
   }
-
   @media screen and (max-width: 375px) {
     max-width: 300px;
   }
@@ -53,82 +49,35 @@
 .modal-form {
   padding-left: 40px;
   padding-right: 40px;
+  text-align: center;
 }
 
-.modal-form__wrapper {
-  position: relative;
-
-  margin-bottom: 10px;
-
+form input {
   display: flex;
   flex-direction: column;
+  margin: 0 auto 10px auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 5px;
 
-  & input {
-    margin: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 5px;
-
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  & textarea {
-    margin: 0px;
-    padding: 15px;
-    height: 120px;
-
-    &::placeholder {
-      font-weight: 300px;
-      font-size: 12px;
-      line-height: 1.17;
-      letter-spacing: 0.01em;
-
-      color: rgba(117, 117, 117, 0.5);
-    }
-
-    &:hover,
-    &:focus {
-      border: 1px solid var(--color3);
-    }
-  }
-  & label {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-
-    color: var(--color2);
-
-    text-align: left;
-    margin-bottom: 4px;
-  }
-  & input {
-    height: 40px;
-
-    &:hover,
-    &:focus {
-      border: 1px solid var(--color3);
-    }
-  }
-  &:hover {
-    .icon-modal-name {
-      fill: var(--color3);
-    }
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color3);
   }
 }
 
 .modal-button__send {
-  padding: 0px;
-  margin: 0px;
-  border-radius: 5px;
   min-width: 200px;
   height: 60px;
-  border: none;
+  padding: 0px;
+  margin: 0;
 
+  border-radius: 5px;
+  border: none;
   color: var(--color1);
   background-color: var(--color3);
   font-weight: bold;
@@ -148,19 +97,16 @@ body.show-modal .modal {
 
 .modal-close {
   position: relative;
-  right: -185px;
+  left: 90%;
   top: 10px;
-  font-style: normal;
+
+  display: inline-block;
+  margin: 0px;
+  font-style: bold;
   font-size: 20px;
   color: var(--color2);
-  text-decoration: none;
-
   &:hover,
   :focus {
     color: var(--color3);
-  }
-
-  @media screen and (max-width: $mobile) {
-    right: -165px;
   }
 }
