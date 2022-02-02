@@ -107,17 +107,24 @@
 .book-tel {
   color: var(--color5);
 }
+
 .book-scrollup {
-  width: 40px;
-  height: 40px;
-  opacity: 0.4;
   position: fixed;
   bottom: 50px;
   right: 35px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+  cursor: pointer;
+  transform: scale(1);
   background: url(../images/icon-top.png) no-repeat;
   @media screen and (max-width: $mobile) {
     bottom: 50px;
     right: 35px;
     z-index: 12;
   }
+}
+
+.book-scrollup:hover {
+  transform: scale(1.3);
 }
