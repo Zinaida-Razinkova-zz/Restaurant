@@ -17,6 +17,6 @@
 - JS modal.
 - JS tabs.
 - JS slider.
-- JS galerie.
+- JS gallery.
 - Lighthouse-audits.
 - Formspree.
