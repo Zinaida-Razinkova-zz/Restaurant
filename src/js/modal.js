@@ -15,8 +15,6 @@ function closeModal() {
   document.body.classList.remove('show-modal');
 }
 function backdropClick(event) {
-  // console.log(event.target);
-  // console.log(event.currentTarget);
   if (event.target === event.currentTarget) {
     closeModal();
   }

@@ -2,8 +2,8 @@ var form = document.getElementById('book-form');
 
 async function handleSubmit(event) {
   event.preventDefault();
-  var status = document.getElementById('book-form-status');
-  var data = new FormData(event.target);
+  let status = document.getElementById('book-form-status');
+  let data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
     body: data,

@@ -1,27 +1,25 @@
 window.currentSlide = currentSlide;
 
-var slideIndex = 2;
+let slideIndex = 2;
 showSlides(slideIndex);
-// console.log(slideIndex);
 
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName('specialties-slide');
-  var dots = document.getElementsByClassName('specialties-slider__dot');
+  const slides = document.getElementsByClassName('specialties-slide');
+  const dots = document.getElementsByClassName('specialties-slider__dot');
   if (n > slides.length) {
     slideIndex = 1;
   }
   if (n < 1) {
     slideIndex = slides.length;
   }
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
   }
-  for (i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(' active', '');
   }
   slides[slideIndex - 1].style.display = 'block';

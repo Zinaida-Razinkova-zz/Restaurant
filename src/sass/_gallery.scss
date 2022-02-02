@@ -1,10 +1,10 @@
-.galerie-section {
+.gallery-section {
   @media screen and (max-width: 423px) {
     display: none;
   }
 }
 
-.galerie-wrapper {
+.gallery-row {
   display: flex;
   justify-content: center;
   margin: 0px;
@@ -13,7 +13,7 @@
   }
 }
 
-.galerie-img {
+.gallery-img {
   cursor: pointer;
   width: 25%;
   &:hover,
@@ -23,7 +23,7 @@
   }
 }
 
-.galerie-modal {
+.gallery-modal {
   display: none;
   position: fixed;
   z-index: 10;
@@ -36,7 +36,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.galerie-modal__close {
+.gallery-modal__close {
   position: absolute;
   top: 0px;
   right: 50px;
@@ -51,7 +51,7 @@
   }
 }
 
-.galerie-modal__slide {
+.gallery-modal__slide {
   display: none;
   margin: 0px auto;
   max-width: 550px;
@@ -61,7 +61,7 @@
   }
 }
 
-.galerie-modal__prev {
+.gallery-modal__prev {
   cursor: pointer;
   position: absolute;
   top: 35%;
@@ -80,7 +80,7 @@
   }
 }
 
-.galerie-modal__next {
+.gallery-modal__next {
   cursor: pointer;
   position: absolute;
   top: 35%;

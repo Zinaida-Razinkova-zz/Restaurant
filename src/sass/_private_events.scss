@@ -26,14 +26,14 @@
 
 .events-weddings,
 .events-parties {
-  margin: 0px;
+  position: absolute;
   font-family: var(--font2);
   font-size: 24px;
   line-height: 0.5;
-  text-align: center;
   text-transform: uppercase;
   color: var(--color1);
-  position: absolute;
+  margin: 0px;
+  text-align: center;
 }
 
 .events-weddings {
